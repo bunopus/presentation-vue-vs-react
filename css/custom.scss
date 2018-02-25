@@ -1,15 +1,53 @@
 .reveal {
 
   section {
+    padding: 0 !important;
     img {
       border: none;
       background: none;
       box-shadow: none;
       margin: 0;
     }
-  }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Geometria, serif;
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Geometria, serif;
+    }
+
+    .half-by-half {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+
+      .left {
+        flex: 0 1 50%;
+        min-height: 100%;
+        max-width: 50%;
+        align-items: flex-start;
+      }
+
+      .right {
+        flex: 0 1 50%;
+        height: 100%;
+        max-width: 50%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      .angular-bg {
+        background-color: rgba(181, 46, 43, 0.1);
+      }
+
+      .react-bg {
+        background-color: rgba(84, 140, 241, 0.17);
+      }
+
+      .vue-bg {
+        background-color: rgba(42, 124, 66, 0.13);
+      }
+    }
+
+    // TODO add Horizontal
   }
 }
