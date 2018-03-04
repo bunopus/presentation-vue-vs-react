@@ -1,5 +1,10 @@
 .reveal {
 
+  .progress, .controls {
+    background: rgba(0, 0, 0, 0.2);
+    color: #dd8105;
+  }
+
   section {
     padding: 0 !important;
     img {
@@ -60,5 +65,17 @@
       text-align: left;
       margin-left: 150px;
     }
+
+    .fragments-inplace .fragment:not(.current-fragment):not(.fade-out) {
+      visibility: hidden;
+    }
+
+    img.illustration {
+      width: 400px;
+    }
   }
+}
+
+body {
+  background: url("../img/bg.png") repeat;
 }
