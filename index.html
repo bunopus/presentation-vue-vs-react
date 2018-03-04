@@ -56,8 +56,10 @@
 				</section>
 				<section>
 					<section data-background="img/chapters/1-who-are-you.png">
-				  <h2>Ты кто такой?</h2>
-				</section>
+						<div class="chapter">
+							<h1>Вы кто такие?</h1>
+						</div>
+					</section>
 					<section>
 						<h4>1) Мы идём в ногу со временем</h4>
 						<br>
@@ -93,15 +95,33 @@
 					  <!--IT-->
 				  </ul>
 				</section>
-				<section>
+				<section data-background="img/rifle.png">
 					<!--EG-->
-				  <h2>Как мы будем разбираться во vue? ПЛАН</h2>
-				  <ul>
-					<li>Будем сравнивать с react, иногда с angular</li>
-					<li>Разберем сильные стороны</li>
-					<li>Обратим внимание на слабые стороны</li>
-					<li>Дадим рекомендации</li>
-				  </ul>
+				  	<div style="height: 600px"><h1>Какой план?</h1></div>
+				  <!--<ul>-->
+					<!--<li>Будем сравнивать с react, иногда с angular</li>-->
+					<!--<li>Разберем сильные стороны</li>-->
+					<!--<li>Обратим внимание на слабые стороны</li>-->
+					<!--<li>Дадим рекомендации</li>-->
+				  <!--</ul>-->
+				</section>
+				<section data-background="img/rifle.png" data-background-blur data-transition="none" data-background-transition="none">
+					<!--EG-->
+					<div style="height: 600px">
+						<h1>Какой план?</h1>
+						<ul>
+						<li>Будем сравнивать с react, иногда с angular</li>
+						<li>Разберем сильные стороны</li>
+						<li>Обратим внимание на слабые стороны</li>
+						<li>Дадим рекомендации</li>
+						</ul>
+					</div>
+					<!--<ul>-->
+					<!--<li>Будем сравнивать с react, иногда с angular</li>-->
+					<!--<li>Разберем сильные стороны</li>-->
+					<!--<li>Обратим внимание на слабые стороны</li>-->
+					<!--<li>Дадим рекомендации</li>-->
+					<!--</ul>-->
 				</section>
 
 
@@ -231,7 +251,8 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'bower_components/jquery/dist/jquery.js' },
 					{ src: 'js/animations.js' },
-					{ src: 'plugin/corner-logos/corner-logos.js' }
+					{ src: 'plugin/corner-logos/corner-logos.js' },
+					{ src: 'plugin/blur-background/blur-background.js' }
 				],
 				cornerLogos: {
                     'about-vue': 'img/vue_logo.png',

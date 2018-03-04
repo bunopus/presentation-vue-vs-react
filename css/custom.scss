@@ -16,6 +16,7 @@
 
     h1, h2, h3, h4, h5, h6 {
       font-family: Geometria, serif;
+      color: black;
     }
 
     .half-by-half {
@@ -68,6 +69,17 @@
 
     .fragments-inplace .fragment:not(.current-fragment):not(.fade-out) {
       visibility: hidden;
+    }
+
+    .chapter {
+      height: 150px;
+      background-color: #f5deb3cf;
+      padding-top: 25px;
+
+      h1 {
+        line-height: 150px;
+        margin: 0
+      }
     }
 
     img.illustration {
