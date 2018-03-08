@@ -83,7 +83,7 @@
       visibility: hidden;
     }
 
-    .chapter {
+    .pre-chapter {
       height: 150px;
       background-color: #f5deb3cf;
       padding-top: 25px;
@@ -96,6 +96,10 @@
 
     img.illustration {
       width: 400px;
+    }
+
+    ul {
+      padding-top: 50px
     }
 
     li {
@@ -115,6 +119,37 @@
 
       img {
         height: 300px;
+      }
+    }
+
+    code {
+      padding: 20px;
+      max-height: 1500px;
+      font-size: 30px;
+      line-height: 35px;
+      overflow: hidden;
+      font-family: Menlo, monospace;
+
+      mark {
+        background-color: rgba(59, 138, 203, 0.33);
+      }
+    }
+
+    &.console {
+      text-align: center;
+      text-align: -webkit-center;
+      .wrapper {
+        -webkit-box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
+        box-shadow: 1px 3px 15px 2px rgba(0,0,0,0.75);
+        border-radius: 5px;
+        width: 1035px;
+        height: 639px;
+        margin-top: 30px;
+
+        svg {
+          font-family: Meslo, Menlo, monospace;
+        }
       }
     }
   }

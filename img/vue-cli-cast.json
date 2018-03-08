@@ -1,0 +1,574 @@
+{
+  "version": 1,
+  "width": 101,
+  "height": 27,
+  "duration": 46.701522,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      9e-05,
+      "\u001b]2;eugene.gusev@spb-egusev2: ~/reps\u0007\u001b]1;~/reps\u0007"
+    ],
+    [
+      0.054851,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[39m\u001b[0m\u001b[49m\u001b[40m\u001b[39m kestrel \u001b[44m\u001b[30m\u001b[30m ~/reps \u001b[49m\u001b[34m\u001b[39m \u001b[K"
+    ],
+    [
+      3.1e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      0.004865,
+      "v\u001b[90mue init webpack vue-test\u001b[39m\u001b[24D"
+    ],
+    [
+      0.094996,
+      "\bv\u001b[39mu"
+    ],
+    [
+      0.755442,
+      "\u001b[39me\u001b[39m \u001b[39mi\u001b[39mn\u001b[39mi\u001b[39mt\u001b[39m \u001b[39mw\u001b[39me\u001b[39mb\u001b[39mp\u001b[39ma\u001b[39mc\u001b[39mk\u001b[39m \u001b[39mv\u001b[39mu\u001b[39me\u001b[39m-\u001b[39mt\u001b[39me\u001b[39ms\u001b[39mt"
+    ],
+    [
+      0.435801,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001924,
+      "\u001b]2;vue init webpack vue-test\u0007\u001b]1;vue\u0007"
+    ],
+    [
+      1.001706,
+      "\r\n"
+    ],
+    [
+      0.287391,
+      "\u001b[?25l"
+    ],
+    [
+      0.000144,
+      "\u001b[2K"
+    ],
+    [
+      0.000127,
+      "\u001b[1G"
+    ],
+    [
+      0.000218,
+      "\u001b[36m⠋\u001b[39m downloading template"
+    ],
+    [
+      0.085725,
+      "\u001b[2K"
+    ],
+    [
+      5.8e-05,
+      "\u001b[1G"
+    ],
+    [
+      0.000221,
+      "\u001b[36m⠙\u001b[39m downloading template"
+    ],
+    [
+      0.082297,
+      "\u001b[2K"
+    ],
+    [
+      9.2e-05,
+      "\u001b[1G"
+    ],
+    [
+      0.00014,
+      "\u001b[36m⠹\u001b[39m downloading template"
+    ],
+    [
+      0.08329,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000142,
+      "\u001b[36m⠸\u001b[39m downloading template"
+    ],
+    [
+      0.085295,
+      "\u001b[2K"
+    ],
+    [
+      0.000102,
+      "\u001b[1G"
+    ],
+    [
+      0.000266,
+      "\u001b[36m⠼\u001b[39m downloading template"
+    ],
+    [
+      0.08097,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000266,
+      "\u001b[36m⠴\u001b[39m downloading template"
+    ],
+    [
+      0.080921,
+      "\u001b[2K"
+    ],
+    [
+      8e-05,
+      "\u001b[1G"
+    ],
+    [
+      0.000172,
+      "\u001b[36m⠦\u001b[39m downloading template"
+    ],
+    [
+      0.08471,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000132,
+      "\u001b[36m⠧\u001b[39m downloading template"
+    ],
+    [
+      0.083024,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000185,
+      "\u001b[36m⠇\u001b[39m downloading template"
+    ],
+    [
+      0.084013,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000244,
+      "\u001b[36m⠏\u001b[39m downloading template"
+    ],
+    [
+      0.083955,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000216,
+      "\u001b[36m⠋\u001b[39m downloading template"
+    ],
+    [
+      0.080218,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      7.2e-05,
+      "\u001b[36m⠙\u001b[39m downloading template"
+    ],
+    [
+      0.082235,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000209,
+      "\u001b[36m⠹\u001b[39m downloading template"
+    ],
+    [
+      0.0829,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000281,
+      "\u001b[36m⠸\u001b[39m downloading template"
+    ],
+    [
+      0.081301,
+      "\u001b[2K"
+    ],
+    [
+      7.5e-05,
+      "\u001b[1G"
+    ],
+    [
+      0.000215,
+      "\u001b[36m⠼\u001b[39m downloading template"
+    ],
+    [
+      0.085483,
+      "\u001b[2K"
+    ],
+    [
+      0.000105,
+      "\u001b[1G"
+    ],
+    [
+      0.000214,
+      "\u001b[36m⠴\u001b[39m downloading template"
+    ],
+    [
+      0.085235,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000222,
+      "\u001b[36m⠦\u001b[39m downloading template"
+    ],
+    [
+      0.081728,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000196,
+      "\u001b[36m⠧\u001b[39m downloading template"
+    ],
+    [
+      0.082698,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000196,
+      "\u001b[36m⠇\u001b[39m downloading template"
+    ],
+    [
+      0.084844,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      0.000232,
+      "\u001b[36m⠏\u001b[39m downloading template"
+    ],
+    [
+      0.080373,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      6e-05,
+      "\u001b[36m⠋\u001b[39m downloading template"
+    ],
+    [
+      0.071957,
+      "\u001b[2K\u001b[1G"
+    ],
+    [
+      4e-05,
+      "\u001b[?25h"
+    ],
+    [
+      0.05166,
+      "\u001b[32m?\u001b[39m \u001b[1mProject name\u001b[22m\u001b[0m \u001b[0m\u001b[2m(vue-test) \u001b[22m"
+    ],
+    [
+      0.000152,
+      "\u001b[26D"
+    ],
+    [
+      2.1e-05,
+      "\u001b[26C"
+    ],
+    [
+      1.026855,
+      "\u001b[2K\u001b[G"
+    ],
+    [
+      0.000154,
+      "\u001b[32m?\u001b[39m \u001b[1mProject name\u001b[22m\u001b[0m \u001b[0m\u001b[36mvue-test\u001b[39m"
+    ],
+    [
+      5.9e-05,
+      "\u001b[23D\u001b[23C"
+    ],
+    [
+      2.4e-05,
+      "\r\n"
+    ],
+    [
+      0.002883,
+      "\u001b[32m?\u001b[39m \u001b[1mProject description\u001b[22m\u001b[0m \u001b[0m\u001b[2m(A Vue.js project) \u001b[22m"
+    ],
+    [
+      2.7e-05,
+      "\u001b[41D"
+    ],
+    [
+      2.6e-05,
+      "\u001b[41C"
+    ],
+    [
+      0.888313,
+      "\u001b[2K\u001b[G"
+    ],
+    [
+      0.000122,
+      "\u001b[32m?\u001b[39m \u001b[1mProject description\u001b[22m\u001b[0m \u001b[0m\u001b[36mA Vue.js project\u001b[39m\u001b[38D"
+    ],
+    [
+      3.7e-05,
+      "\u001b[38C"
+    ],
+    [
+      2.6e-05,
+      "\r\n"
+    ],
+    [
+      0.001228,
+      "\u001b[32m?\u001b[39m \u001b[1mAuthor\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Evgeny Gusev <bunopus@gmail.com>) \u001b[22m\u001b[44D"
+    ],
+    [
+      2.9e-05,
+      "\u001b[44C"
+    ],
+    [
+      0.785894,
+      "\u001b[2K\u001b[G"
+    ],
+    [
+      0.000145,
+      "\u001b[32m?\u001b[39m \u001b[1mAuthor\u001b[22m\u001b[0m \u001b[0m\u001b[36mEvgeny Gusev <bunopus@gmail.com>\u001b[39m"
+    ],
+    [
+      8.2e-05,
+      "\u001b[41D"
+    ],
+    [
+      4.1e-05,
+      "\u001b[41C"
+    ],
+    [
+      3.5e-05,
+      "\r\n"
+    ],
+    [
+      0.001834,
+      "\u001b[?25l"
+    ],
+    [
+      0.001084,
+      "\u001b[32m?\u001b[39m \u001b[1mVue build\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Use arrow keys)\u001b[22m\r\n\u001b[36m❯ Runtime + Compiler: recommended for most users\u001b[39m \r\n  Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed\r\n in .vue files - render functions are required elsewhere "
+    ],
+    [
+      3.1e-05,
+      "\u001b[57D\u001b[57C"
+    ],
+    [
+      0.613724,
+      "\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[G"
+    ],
+    [
+      3.8e-05,
+      "\u001b[32m?\u001b[39m \u001b[1mVue build\u001b[22m\u001b[0m \u001b[0m\u001b[36mstandalone\u001b[39m"
+    ],
+    [
+      0.000104,
+      "\u001b[22D\u001b[22C\r\n"
+    ],
+    [
+      2.8e-05,
+      "\u001b[?25h"
+    ],
+    [
+      0.001518,
+      "\u001b[32m?\u001b[39m \u001b[1mInstall vue-router?\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Y/n) \u001b[22m\u001b[28D"
+    ],
+    [
+      3e-05,
+      "\u001b[28C"
+    ],
+    [
+      0.846838,
+      "\u001b[2K\u001b[G"
+    ],
+    [
+      0.000132,
+      "\u001b[32m?\u001b[39m \u001b[1mInstall vue-router?\u001b[22m\u001b[0m \u001b[0m\u001b[36mYes\u001b[39m\u001b[25D\u001b[25C"
+    ],
+    [
+      3.8e-05,
+      "\r\n"
+    ],
+    [
+      0.001067,
+      "\u001b[32m?\u001b[39m \u001b[1mUse ESLint to lint your code?\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Y/n) \u001b[22m\u001b[38D"
+    ],
+    [
+      2.9e-05,
+      "\u001b[38C"
+    ],
+    [
+      1.105651,
+      "\u001b[2K\u001b[G"
+    ],
+    [
+      0.000152,
+      "\u001b[32m?\u001b[39m \u001b[1mUse ESLint to lint your code?\u001b[22m\u001b[0m \u001b[0m\u001b[36mYes\u001b[39m\u001b[35D"
+    ],
+    [
+      4.2e-05,
+      "\u001b[35C\r\n"
+    ],
+    [
+      0.001089,
+      "\u001b[?25l"
+    ],
+    [
+      0.00032,
+      "\u001b[32m?\u001b[39m \u001b[1mPick an ESLint preset\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Use arrow keys)\u001b[22m\r\n\u001b[36m❯ Standard (https://github.com/standard/standard)\u001b[39m \r\n  Airbnb (https://github.com/airbnb/javascript) \r\n  none (configure it yourself) "
+    ],
+    [
+      2.6e-05,
+      "\u001b[31D\u001b[31C"
+    ],
+    [
+      0.947624,
+      "\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[G"
+    ],
+    [
+      0.000465,
+      "\u001b[32m?\u001b[39m \u001b[1mPick an ESLint preset\u001b[22m\u001b[0m \u001b[0m\u001b[36mStandard\u001b[39m"
+    ],
+    [
+      3.2e-05,
+      "\u001b[32D\u001b[32C"
+    ],
+    [
+      3.8e-05,
+      "\r\n"
+    ],
+    [
+      2e-05,
+      "\u001b[?25h"
+    ],
+    [
+      0.001635,
+      "\u001b[32m?\u001b[39m \u001b[1mSet up unit tests\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Y/n) \u001b[22m\u001b[26D"
+    ],
+    [
+      2.8e-05,
+      "\u001b[26C"
+    ],
+    [
+      0.679984,
+      "\u001b[2K\u001b[G"
+    ],
+    [
+      0.000233,
+      "\u001b[32m?\u001b[39m \u001b[1mSet up unit tests\u001b[22m\u001b[0m \u001b[0m\u001b[36mYes\u001b[39m"
+    ],
+    [
+      0.000118,
+      "\u001b[23D"
+    ],
+    [
+      3.1e-05,
+      "\u001b[23C\r\n"
+    ],
+    [
+      0.001543,
+      "\u001b[?25l"
+    ],
+    [
+      0.000436,
+      "\u001b[32m?\u001b[39m \u001b[1mPick a test runner\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Use arrow keys)\u001b[22m\r\n\u001b[36m❯ Jest\u001b[39m \r\n  Karma and Mocha \r\n  none (configure it yourself) \u001b[31D"
+    ],
+    [
+      3.1e-05,
+      "\u001b[31C"
+    ],
+    [
+      0.538285,
+      "\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[G"
+    ],
+    [
+      0.000299,
+      "\u001b[32m?\u001b[39m \u001b[1mPick a test runner\u001b[22m\u001b[0m \u001b[0m\u001b[36mjest\u001b[39m"
+    ],
+    [
+      2.8e-05,
+      "\u001b[25D\u001b[25C"
+    ],
+    [
+      2.2e-05,
+      "\r\n"
+    ],
+    [
+      1.9e-05,
+      "\u001b[?25h"
+    ],
+    [
+      0.001362,
+      "\u001b[32m?\u001b[39m \u001b[1mSetup e2e tests with Nightwatch?\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Y/n) \u001b[22m"
+    ],
+    [
+      2.9e-05,
+      "\u001b[41D\u001b[41C"
+    ],
+    [
+      0.415355,
+      "\u001b[2K\u001b[G"
+    ],
+    [
+      0.000182,
+      "\u001b[32m?\u001b[39m \u001b[1mSetup e2e tests with Nightwatch?\u001b[22m\u001b[0m \u001b[0m\u001b[36mYes\u001b[39m"
+    ],
+    [
+      5.8e-05,
+      "\u001b[38D"
+    ],
+    [
+      6.8e-05,
+      "\u001b[38C"
+    ],
+    [
+      0.000103,
+      "\r\n"
+    ],
+    [
+      0.001092,
+      "\u001b[?25l"
+    ],
+    [
+      0.000429,
+      "\u001b[32m?\u001b[39m \u001b[1mShould we run `npm install` for you after the project has been created? (recommended)\u001b[22m\u001b[0m \u001b[0m\u001b[2m(Use arrow ke\r\nys)\u001b[22m\r\n\u001b[36m❯ Yes, use NPM\u001b[39m \r\n  Yes, use Yarn \r\n  No, I will handle that myself "
+    ],
+    [
+      2.9e-05,
+      "\u001b[32D\u001b[32C"
+    ],
+    [
+      0.509466,
+      "\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[1A\u001b[2K\u001b[G"
+    ],
+    [
+      0.00015,
+      "\u001b[32m?\u001b[39m \u001b[1mShould we run `npm install` for you after the project has been created? (recommended)\u001b[22m\u001b[0m \u001b[0m\u001b[36mnpm\u001b[39m"
+    ],
+    [
+      4.2e-05,
+      "\u001b[91D\u001b[91C"
+    ],
+    [
+      2.5e-05,
+      "\r\n\u001b[?25h"
+    ],
+    [
+      0.079441,
+      "\r\n"
+    ],
+    [
+      0.000198,
+      "\u001b[37m   vue-cli\u001b[39m \u001b[90m·\u001b[39m Generated \"vue-test\".\r\n"
+    ],
+    [
+      0.003222,
+      "\r\n\r\n# \u001b[32mInstalling project dependencies ...\u001b[39m\r\n# ========================\r\n\r\n"
+    ],
+    [
+      0.531346,
+      "\u001b[?25l"
+    ]
+  ]
+}
