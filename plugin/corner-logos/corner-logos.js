@@ -7,14 +7,15 @@
 (function() {
     const config = Reveal.getConfig().cornerLogos;
     const logoClass = 'corner-logo';
+    const horizontalClass = 'horizontal-layout';
     const cornerLogos = addLogos(config);
     const margin = '10px'
 
     hideLogos(cornerLogos);
 
     function showEl(el, position) {
-        let css = {position: 'absolute', top: `${margin}`};
-        css[position] = `${margin}`;
+        let css = {position: 'absolute', 'z-index': 100};
+        css = Object.assign(css, position);
         el.removeAttr('style').css(css).show();
     }
 
@@ -22,12 +23,17 @@
         hideLogos(cornerLogos);
 
         let frameworks = getFrameworks(slide.currentSlide, Object.keys(cornerLogos));
-        if(!frameworks.length || frameworks.length > 2){
+        if (!frameworks.length || frameworks.length > 2) {
             return;
         }
-
-        showEl(cornerLogos[frameworks[0]], 'left');
-        showEl(cornerLogos[frameworks[1]], 'right');
+        let horizontal = getLayout(slide.currentSlide, horizontalClass);
+        if (horizontal) {
+            showEl(cornerLogos[frameworks[0]], {left: `${margin}`, top: `${margin}`});
+            showEl(cornerLogos[frameworks[1]], {left: `${margin}`, top: `calc(50% + ${margin})`});
+        } else {
+            showEl(cornerLogos[frameworks[0]], {top: `${margin}`, left: `${margin}`});
+            showEl(cornerLogos[frameworks[1]], {top: `${margin}`, right: `${margin}`});
+        }
 
     }, false );
 
@@ -48,6 +54,10 @@
     function getFrameworks(slide, classes) {
         let frameworks = intersect(slide.classList, classes);
         return frameworks.length ? frameworks : intersect(slide.parentElement.classList, classes)
+    }
+
+    function getLayout(slide, layoutClass) {
+        return slide.classList.contains(layoutClass);
     }
 
     function intersect(a, b) {

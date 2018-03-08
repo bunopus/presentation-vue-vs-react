@@ -14,9 +14,14 @@
       margin: 0;
     }
 
+    font-family: Geometria, serif;
+    color: black;
     h1, h2, h3, h4, h5, h6 {
       font-family: Geometria, serif;
       color: black;
+      &:not(.plain) {
+        padding-bottom: 50px;
+      }
     }
 
     h3 {
@@ -58,15 +63,34 @@
       }
 
       .react-bg {
-        background-color: rgba(84, 140, 241, 0.17);
+        background-color: rgba(84, 140, 241, 0.1);
       }
 
       .vue-bg {
-        background-color: rgba(42, 124, 66, 0.13);
+        background-color: rgba(42, 124, 66, 0.1);
+      }
+
+      &.horizontal {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        div {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 100%;
+          max-height: 50%;
+          min-height: 50%;
+          width: 100%;
+
+          &.center {
+            align-items: center;
+          }
+        }
       }
     }
-
-    // TODO add Horizontal
 
     .eg_info {
       direction: rtl;
@@ -96,10 +120,6 @@
 
     img.illustration {
       width: 400px;
-    }
-
-    ul {
-      padding-top: 50px
     }
 
     li {
@@ -151,6 +171,14 @@
           font-family: Meslo, Menlo, monospace;
         }
       }
+    }
+
+    blockquote {
+      box-shadow: none;
+    }
+
+    .head-score {
+      margin-right: 20px;
     }
   }
 }
