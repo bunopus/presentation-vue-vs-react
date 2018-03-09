@@ -181,8 +181,65 @@
       margin-right: 20px;
     }
   }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .vue-npm,
+    .ng-npm,
+    .react-npm {
+      box-sizing: border-box;
+      position: relative;
+      height: 494px;
+      width: 538px;
+      border: 2px solid transparent;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 70px;
+        height: 70px;
+        top: 10px;
+        right: 20px;
+        background: no-repeat center center;
+        background-size: contain;
+      }
+
+      &.current-fragment {
+        border-color: red;
+      }
+
+    }
+
+    .vue-npm{
+      background-image: url("../img/slides/vue-npm.png");
+      &::before {
+        background-image: url("../img/vue_logo.png");
+      }
+    }
+    .ng-npm{
+      background-image: url("../img/slides/angular-npm.png");
+      &::before {
+        background-image: url("../img/ng_logo.png");
+      }
+    }
+    .react-npm {
+      background-image: url("../img/slides/react-npm.png");
+      &::before {
+        background-image: url("../img/react_logo.png");
+      }
+    }
+  }
 }
 
 body {
   background: url("../img/bg.png") repeat;
+}
+
+.slide-background {
+  .white-bg {
+    background-color: #ffffff;
+  }
 }
