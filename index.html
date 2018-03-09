@@ -178,14 +178,35 @@
 						Как SFC превращается в JS - сравнить с Angular
 					</section>
 					<section>
-						<!--IT-->
-						Virtual DOM - разница между Vue и React
-						https://ru.vuejs.org/v2/guide/comparison.html
+						Virtual DOM. Как он работает?
+					</section>
+					<section data-background="img/slides/vdom/1.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/2.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/3.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/4.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/5.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/6.png" data-background-size="contain"></section>
+
+					<section>
+						Есть ли отличия в рендеринге от React?
+						<div class="fragment">Есть.</div>
+						<ul>
+							<li class="fragment">Проверка изменений</li>
+							<li class="fragment">Рендер списков</li>
+						</ul>
 					</section>
 					<section>
 						<!--EG-->
 						<!--IT про React-->
 						Reuse Dom - Angular (trackBy), React (key)
+
+						<code>
+							<pre>
+								const postItems = posts.map((post) =>
+									&lt;Post key={post.id} post={post} /&gt;
+								);
+							</pre>
+						</code>
 					</section>
 					<section>
 						CSS - как работает инкапсуляция
