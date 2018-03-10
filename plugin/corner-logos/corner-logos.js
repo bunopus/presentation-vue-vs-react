@@ -28,11 +28,11 @@
         }
         let horizontal = getLayout(slide.currentSlide, horizontalClass);
         if (horizontal) {
-            showEl(cornerLogos[frameworks[0]], {left: `${margin}`, top: `${margin}`});
-            showEl(cornerLogos[frameworks[1]], {left: `${margin}`, top: `calc(50% + ${margin})`});
+            frameworks[0] && showEl(cornerLogos[frameworks[0]], {left: `${margin}`, top: `${margin}`});
+            frameworks[1] && showEl(cornerLogos[frameworks[1]], {left: `${margin}`, top: `calc(50% + ${margin})`});
         } else {
-            showEl(cornerLogos[frameworks[0]], {top: `${margin}`, left: `${margin}`});
-            showEl(cornerLogos[frameworks[1]], {top: `${margin}`, right: `${margin}`});
+            frameworks[0] && showEl(cornerLogos[frameworks[0]], {top: `${margin}`, left: `${margin}`});
+            frameworks[1] && showEl(cornerLogos[frameworks[1]], {top: `${margin}`, right: `${margin}`});
         }
 
     }, false );

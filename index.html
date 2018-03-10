@@ -185,7 +185,7 @@
                     </aside>
                 </section>
 				<section>
-					<section>
+					<section class="about-vue">
 						<p>SFC -> JS</p>
 						<pre><code data-trim data-noescape class="html" style="position: relative"><div class="fragment" data-fragment-index="1" style="position: absolute; top: 350px; left: 40px;"><img src="img/babel.svg" height="100"></div><div class="fragment" data-fragment-index="3" style="position: absolute; top: 650px; left: 40px;"><img src="img/postcss.svg" height="150"></div><span class="fragment code-highlight" data-fragment-index="4">&lt;template&gt;
   &lt;div id=&quot;hello&quot;&gt;
@@ -211,7 +211,7 @@ export default {
 &lt;/style&gt;</span>
                         </code></pre>
 					</section>
-					<section>
+					<section class="about-vue">
 						<p>Vue template compiler</p>
 						<pre><code data-trim data-noescape class="html">
 &lt;div id=&quot;hello&quot;&gt;
@@ -252,7 +252,7 @@ render: function (createElement) { // or h
 							</div>
 						</div>
 					</section>
-					<section>
+					<section class="about-vue">
 						<p>Vue template compiler</p>
 						<pre><code data-trim data-noescape class="html">
 &lt;div&gt;
@@ -276,13 +276,68 @@ _m(0): function anonymous() {
 					<section>
 						Virtual DOM. Как он работает?
 					</section>
-					<section data-background="img/slides/vdom/1.png" data-background-size="contain" class="about-react"></section>
-					<section data-background="img/slides/vdom/2.png" data-background-size="contain" class="about-react"></section>
-					<section data-background="img/slides/vdom/3.png" data-background-size="contain" class="about-react"></section>
-					<section data-background="img/slides/vdom/4.png" data-background-size="contain" class="about-react"></section>
-					<section data-background="img/slides/vdom/5.png" data-background-size="contain" class="about-react"></section>
-					<section data-background="img/slides/vdom/6.png" data-background-size="contain" class="about-react"></section>
+					<section data-background="img/slides/vdom/1.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/2.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/3.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/4.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/5.png" data-background-size="contain"></section>
+					<section data-background="img/slides/vdom/6.png" data-background-size="contain"></section>
 
+
+					<section>Virtual DOM во Vue</section>
+					<section class="about-vue">
+						<i>vue/src/core/vdom/vnode.js</i>
+						<pre><code data-trim data-noescape class="js">
+<span>export default class VNode {
+  tag: string | void;
+  data: VNodeData | void;
+  children: ?Array&lt;VNode&gt;
+  text: string | void;</span>
+  <span class="fragment code-highlight">elm: Node | void;</span>
+  <span>ns: string | void;
+  context: Component | void; // rendered in this component's scope
+  key: string | number | void;
+  componentOptions: VNodeComponentOptions | void;
+  componentInstance: Component | void; // component instance
+  parent: VNode | void; // component placeholder node</span>
+  //...
+                        </code></pre>
+					</section>
+					<section class="about-vue">
+						<i>vue/src/core/vdom/patch.js</i>
+						<pre><code data-trim data-noescape class="js">
+
+/**
+ * Virtual DOM patching algorithm based on Snabbdom by
+ * Simon Friis Vindum (@paldepind)
+ * Licensed under the MIT License
+ * https://github.com/paldepind/snabbdom/blob/master/LICENSE
+ *
+ * modified by Evan You (@yyx990803)
+ *
+ * Not type-checking this because this file is perf-critical and the cost
+ * of making flow understand it is not worth it.
+ */
+                        </code></pre>
+					</section>
+					<section class="about-vue">
+						<pre><code data-trim data-noescape class="js">
+// vue/src/core/vdom/patch.js
+function createElm (
+  // ...
+  vnode.elm = vnode.ns
+    ? nodeOps.createElementNS(vnode.ns, tag)
+    : nodeOps.createElement(tag, vnode)
+
+<span class="fragment">export function createPatchFunction (backend) {
+  const { modules, nodeOps } = backend
+  // ...</span>
+
+<span class="fragment">// vue/src/platforms/web/runtime/node-ops.js
+export function createElement (tagName: string, vnode: VNode): Element {
+  const elm = document.createElement(tagName)</span>
+						</code></pre>
+					</section>
 					<section class="about-react">
 						Есть ли отличия в рендеринге от React?
 						<div class="fragment">Есть.</div>
@@ -308,6 +363,7 @@ _m(0): function anonymous() {
 					<section data-background="img/slides/keys/4.png" data-background-size="contain" class="about-react"></section>
 					<section>
 						CSS - как работает инкапсуляция
+						https://github.com/vuejs/vue/blob/990374bacbaa75ae2535370583714f1032e768a1/src/core/vdom/patch.js#L317
 					</section>
 				</section>
 
