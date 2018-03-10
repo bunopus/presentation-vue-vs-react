@@ -188,28 +188,28 @@
 					<section>
 						<p>SFC -> JS</p>
 						<pre><code data-trim data-noescape class="html">
-&lt;template&gt;
+<span class="fragment code-highlight" data-fragment-index="2">&lt;template&gt;
   &lt;div id=&quot;hello&quot;&gt;
     &lt;h1&gt;\{{ msg }}&lt;/h1&gt;
   &lt;/div&gt;
-&lt;/template&gt;
-
+&lt;/template&gt;</span>
+<span class="fragment code-highlight" data-fragment-index="0">
 &lt;script&gt;
 export default {
-    name: 'hello',
-    data () {
-        return {
-            msg: 'Welcome to Your Vue.js App'
-        }
+  name: 'hello',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
     }
+  }
 }
 &lt;/script&gt;
-
+</span><span class="fragment code-highlight" data-fragment-index="1">
 &lt;style scoped&gt;
 #hello {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
 }
-&lt;/style&gt;
+&lt;/style&gt;</span>
                         </code></pre>
 					</section>
 					<section>
@@ -346,7 +346,8 @@ export default {
 					{ src: 'js/animations.js' },
 					{ src: 'plugin/corner-logos/corner-logos.js' },
 					{ src: 'plugin/blur-background/blur-background.js' },
-					{ src: 'plugin/script-runner/script-runner.js' }
+					{ src: 'plugin/script-runner/script-runner.js' },
+					{ src: 'plugin/code-fragment-highlight/code-fragment-highlight.js' }
 
 				],
 				cornerLogos: {
