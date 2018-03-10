@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/theme/white.css">
 
         <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="lib/css/github-gist.css">
+        <link rel="stylesheet" href="lib/css/pojoaque.css">
 
         <link rel="stylesheet" href="css/custom.css">
 
@@ -181,14 +181,36 @@
                     <h1><p>2. DOM</p></h1>
                     <img src="img/chapters/2-dom.png" style="height: 350px">
                     <aside class="notes">
-                        Мы решили пойти немного другим путём, давайте возьмём несколько основных моментов, но глубже
+                        [EG] - Мы решили пойти немного другим путём чем раньше, давайте возьмём несколько основных моментов, но копнём глубже
                     </aside>
                 </section>
 				<section>
-
-					Часть 1 - рендеринг
 					<section>
-						Как SFC превращается в JS - сравнить с Angular
+						<p>SFC -> JS</p>
+						<pre><code data-trim data-noescape class="html">
+&lt;template&gt;
+  &lt;div id=&quot;hello&quot;&gt;
+    &lt;h1&gt;\{{ msg }}&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+    name: 'hello',
+    data () {
+        return {
+            msg: 'Welcome to Your Vue.js App'
+        }
+    }
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+#hello {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+&lt;/style&gt;
+                        </code></pre>
 					</section>
 					<section>
 						Virtual DOM. Как он работает?
@@ -322,7 +344,7 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: waitForHLJS },
 					{ src: 'bower_components/jquery/dist/jquery.js' },
 					{ src: 'js/animations.js' },
 					{ src: 'plugin/corner-logos/corner-logos.js' },
@@ -348,6 +370,15 @@
 					}
             },
 			});
+
+            function waitForHLJS() {
+                if(window.hljs) {
+                    hljs.initHighlightingOnLoad();
+                    return;
+                }
+                console.log('Waiting for hljs');
+                setTimeout(waitForHLJS, 1000);
+            }
 		</script>
 	</body>
 </html>
