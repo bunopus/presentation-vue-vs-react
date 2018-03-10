@@ -268,6 +268,9 @@ _m(0): function anonymous() {
 }
 								</code></pre>
 						</div>
+                        <aside class="notes">
+                            Well, static Render Functions are used to optimize the render process by essentially caching parts of the DOM tree that are static and therefore can’t change. When you call the render function that was generated along with them, it will call these functions to get those static parts.
+                        </aside>
 					</section>
 
 					<section>
