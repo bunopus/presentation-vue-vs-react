@@ -153,16 +153,19 @@
                             </div>
                         </div>
                     </section>
-                    <section class="about-react">
-                        <h3>"Философия" create-react-app</h3>
-                        <blockquote>
-                            <b>One Dependency:</b>There is just one build dependency.<br><br>
+					<section class="about-react">
+						<h3>"Философия" create-react-app</h3>
+						<blockquote>
+							<b>One Dependency:</b>There is just one build dependency.<br><br>
 
-                            <b>No Configuration Required</b>: You don't need to configure anything.<br><br>
+							<b>No Configuration Required</b>: You don't need to configure anything.<br><br>
 
-                            <b>No Lock-In</b>: You can “eject” to a custom setup at any time.<br>
-                        </blockquote>
-                    </section>
+							<b>No Lock-In</b>: You can “eject” to a custom setup at any time.<br>
+						</blockquote>
+						<span class="fragment" data-state="h_joke"></span>
+					</section>
+					<section>
+					</section>
                     <section>
                         <h2>Итого:</h2>
                         <div class="fragment" data-duration="3" data-animate="tada" data-delay="1.2">
@@ -441,7 +444,7 @@ export function createElement (tagName: string, vnode: VNode): Element {
 				</section>
 			</div>
 		</div>
-
+		<img id="h_joke" src="img/h.png" style="display: none; position: absolute; top: 50%; left: 50px; z-index: 100">
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
@@ -496,6 +499,22 @@ export function createElement (tagName: string, vnode: VNode): Element {
                 console.log('Waiting for hljs');
                 setTimeout(waitForHLJS, 1000);
             }
+
+            Reveal.addEventListener( 'fragmentshown', function( event ) {
+                if (event.fragment.getAttribute('data-state') === 'h_joke') {
+                    $("#h_joke").show().addClass('animated bounceInUp');
+                }
+            });
+
+            Reveal.addEventListener( 'fragmenthidden', function( event ) {
+                if(event.fragment.getAttribute('data-state') === 'h_joke'){
+                    $("#h_joke").hide();
+                }
+            } );
+
+            Reveal.addEventListener( 'slidechanged', function( event ) {
+                    $("#h_joke").hide();
+            } );
 		</script>
 	</body>
 </html>
