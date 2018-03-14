@@ -372,24 +372,28 @@ export function createElement (tagName: string, vnode: VNode): Element {
 					</section>
 					<section class="about-react">
 						Reuse Dom - Vue (key), React (key), Angular (trackBy)
-						<pre><code data-trim data-noescape class="js">
+						<pre><code data-trim data-noescape class="html">
                             &lt;div v-for=&quot;item in items&quot; :key=&quot;item.id&quot;&gt;
                               &lt;!-- content --&gt;
                             &lt;/div&gt;
                         </code></pre>
 					</section>
-					<!--<section class="about-react">-->
-						<!--Есть ли отличия в рендеринге от React?-->
-						<!--<div class="fragment">Есть.</div>-->
-						<!--<ul>-->
-							<!--<li class="fragment">Проверка изменений</li>-->
-							<!--<li class="fragment">Внесение изменений</li>-->
-							<!--<li class="fragment">Рендер списков</li>-->
-						<!--</ul>-->
-					<!--</section>-->
 					<section>
-						CSS - как работает инкапсуляция
-						https://github.com/vuejs/vue/blob/990374bacbaa75ae2535370583714f1032e768a1/src/core/vdom/patch.js#L317
+                        <h5>Инкапсуляция стилей</h5>
+                        <pre class="fragment"><code data-trim data-noescape class="style">
+&lt;!-- Add &quot;scoped&quot; attribute to limit CSS to this component only --&gt;
+&lt;style scoped&gt;
+  div {
+    color: red;
+  }
+&lt;/style&gt;
+                        </code></pre>
+                        <pre class="fragment"><code data-trim data-noescape class="html">
+&lt;div data-v-469af010=&quot;&quot;&gt;
+    &lt;ul data-v-469af010=&quot;&quot;&gt;
+        &lt;li data-v-469af010=&quot;&quot;&gt;
+            &lt;div data-v-469af010=&quot;&quot; &gt;
+                        </code></pre>
 					</section>
 				</section>
 
