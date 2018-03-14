@@ -183,7 +183,7 @@
                         <h1><p>2. DOM</p></h1>
                         <img src="img/chapters/2-dom.png" style="height: 350px">
                         <aside class="notes">
-                            [EG] - Мы решили пойти немного другим путём чем раньше, давайте возьмём несколько основных моментов, но копнём глубже
+                            [EG] - Мы решили пойти немного другим путём чем раньше, давайте возьмём несколько основных моментов, но копнём глубже. Так как и реакт и Vue - это View - то на дом больше всего времени
                         </aside>
                     </section>
 					<section class="about-vue">
@@ -398,7 +398,36 @@ export function createElement (tagName: string, vnode: VNode): Element {
 				</section>
 
 				<section>
-					Биндинг (ререндер)
+					<section class="chapter">
+						<h1><p>3. Binding</p></h1>
+						<img src="img/chapters/3-binding.png" style="height: 350px">
+						<aside class="notes">
+
+						</aside>
+					</section>
+                    <section>
+                        <h5>Как это работает?</h5>
+                        <pre><code data-trim data-noescape class="html">
+&lt;template&gt;
+  &lt;div&gt;
+    {{ message }}
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data () {
+    return {
+      message: &quot;Hello, World!&quot;
+    }
+  }
+&lt;/script&gt;
+                        </code></pre>
+                    </section>
+                    <section data-background="img/atomic.jpg">
+                        <h1>АТОМЫ</h1>
+                        <p style="color: red">TODO анимировать</p>
+                    </section>
 					<section>
 						in Vue - атомы - показать get set
 					</section>
