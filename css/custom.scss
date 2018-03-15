@@ -281,6 +281,64 @@
     opacity: 0;
     animation: fadein 5s forwards;
   }
+
+  .comparsion-table {
+    height: 100vh;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+
+    img {
+     padding-bottom: 50px
+    }
+
+    .winner {
+      color: #dd8105;
+      font-size: 1.4em;
+    }
+
+    .loser {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .faces {
+    .avatar {
+      border-radius: 25px;
+    }
+
+    .middle-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+
+      font-size: 1em;
+      line-height: 1.5em;
+      font-weight: 100;
+
+      img.small-logo {
+        width: 50px;
+        margin: 0;
+        vertical-align:middle;
+        border-radius: 0;
+      }
+
+      a {
+        color: black;
+      }
+    }
+  }
 }
 
 body {
