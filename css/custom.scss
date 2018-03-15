@@ -175,8 +175,8 @@
       overflow: hidden;
       font-family: Menlo, monospace;
 
-      mark {
-        background-color: rgba(59, 138, 203, 0.33);
+      .fragment.highlight-blue.visible, mark {
+        background-color: rgba(59, 138, 203, 0.51);
       }
     }
 
