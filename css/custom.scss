@@ -271,6 +271,12 @@
     height: 100%;
     width: 100%;
   }
+
+
+  div.slide-background.present[data-background-hash="img/atomic.jpgnullnullnullnullnullnullnullnull"] {
+    opacity: 0;
+    animation: fadein 5s forwards;
+  }
 }
 
 body {
@@ -281,4 +287,9 @@ body {
   .white-bg {
     background-color: #ffffff;
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
