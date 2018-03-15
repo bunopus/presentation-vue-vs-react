@@ -178,6 +178,10 @@
       .fragment.highlight-blue.visible, mark {
         background-color: rgba(59, 138, 203, 0.51);
       }
+
+      .non-highlight-code {
+        opacity: 0.1;
+      }
     }
 
     &.console {

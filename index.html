@@ -340,6 +340,9 @@ function createElm (
 export function createElement (tagName: string, vnode: VNode): Element {
   const elm = document.createElement(tagName)</span>
 						</code></pre>
+						<aside class="notes">
+							Рассказать что это позволяет делать Серверный Рендеринг
+						</aside>
 					</section>
 					<section>
 						<h5>Переиспользование DOM</h5>
@@ -481,7 +484,11 @@ data () {
 					<section>
 						<h3>Проблемы?</h3>
 					</section>
-					<section data-background="img/bomb.jpeg" data-background-size="cover"></section>
+					<section data-background="img/bomb.jpeg" data-background-size="cover">
+						<aside class="notes">
+							Знаете что это? Это "Толстяк. Бомба, которую сбросили на Хиросиму. Но вообще могли бы сбросить Vue, ведь...
+						</aside>
+					</section>
 					<section data-background="img/bomb.jpeg" data-background-size="cover" data-background-blur>
 						<h5>Memory Overhead (20x)</h5>
 						<p>40b -> 760b</p>
@@ -508,12 +515,171 @@ data () {
 
 
 				<section>
-					Дата флоу - Flux
+                    <section class="chapter">
+                        <h1><p>4. Data flow</p></h1>
+                        <img src="img/chapters/4-data-flow.png" style="height: 300px">
+                        <aside class="notes">
+
+                        </aside>
+                    </section>
 					<section>
-						Vuex что это такое (вкратце)
+						<h2>Vuex</h2>
+						<i>State management pattern + library</i>
+					</section>
+					<section class="about-vue about-react horizontal-layout">
+						<div class="half-by-half horizontal" style="text-align: center">
+							<div class="left vue-bg center">
+								<pre><code data-trim data-noescape class="js">
+									<span>Vue.use(Vuetify)</span>
+									<span class="fragment">//...
+									let app = new Vue({
+									  <span class="non-highlight-code">el: '#app',</span>
+									  store,
+									  <span class="non-highlight-code">components: { App },
+									  template: '&lt;App/&gt;'</span>
+									})</span>
+								</code></pre>
+							</div>
+							<div class="right react-bg center">
+							</div>
+						</div>
+					</section>
+					<section class="about-vue about-react horizontal-layout" data-transition="none">
+						<div class="half-by-half horizontal" style="text-align: center">
+							<div class="left vue-bg center">
+								<pre><code data-trim data-noescape class="js">
+const Shawermeter = {
+  template: `&lt;div&gt;{{ score }}&lt;/div&gt;`,
+  computed: {
+    count () {
+      return this.$store.state.score
+    }
+  }
+}
+								</code></pre>
+							</div>
+							<div class="right react-bg center">
+								ХЗ, ДОБАВИТЬ
+							</div>
+						</div>
 					</section>
 					<section>
-						Сравнить с React
+						<h5>Геттеры</h5>
+					</section>
+					<section class="about-vue about-react horizontal-layout">
+						<div class="half-by-half horizontal" style="text-align: center">
+							<div class="left vue-bg center">
+								<pre><code data-trim data-noescape class="js">
+<span>const store = new Vuex.Store({
+  state: {
+    reviews: [{ score: 4.3, text: '...'}, { score: 3.2, text: '...'}]
+  },</span>
+  <span class="fragment">getters: {
+    topReviews: state => {
+      return state.reviews.filter(review => reviews.score > 4)
+    }
+  }
+})</span>
+								</code></pre>
+							</div>
+							<div class="right react-bg center">
+								ХЗ, ДОБАВИТЬ
+							</div>
+						</div>
+					</section>
+					<section>
+						<h5>Мутации</h5>
+					</section>
+					<section class="about-vue about-react horizontal-layout">
+						<div class="half-by-half horizontal" style="text-align: center">
+							<div class="left vue-bg center">
+								<pre><code data-trim data-noescape class="js">
+const store = new Vuex.Store({
+  state: { count: 1 },
+  <span class="fragment">mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+//...</span>
+<span class="fragment">store.commit('increment')</span>
+								</code></pre>
+							</div>
+							<div class="right react-bg center">
+								ХЗ, ДОБАВИТЬ
+							</div>
+						</div>
+					</section>
+					<section class="about-vue about-react horizontal-layout">
+						<div class="half-by-half horizontal" style="text-align: center">
+							<div class="left vue-bg center">
+								<h5>Мутации должны:</h5>
+								<ul>
+									<li class="fragment">Следовать правилам реактивности Vue</li>
+									<li class="fragment">(Хорошо бы) Использовать константы для типов</li>
+									<li class="fragment"><u>Быть синхронными</u></li>
+								</ul>
+							</div>
+							<div class="right react-bg center">
+								ХЗ, ДОБАВИТЬ
+							</div>
+						</div>
+					</section>
+					<section>
+						<h5>Действия (Actions)</h5>
+					</section>
+					<section class="about-vue about-react horizontal-layout">
+						<div class="half-by-half horizontal" style="text-align: center">
+							<div class="left vue-bg center">
+								<pre><code data-trim data-noescape class="js">
+actions: {
+  incrementAsync ({ commit }, amount) {
+    setTimeout(() => {
+	  commit('increment', amount)
+    }, 1000)
+  }
+}
+//...
+<span class="fragment">store.dispatch('incrementAsync', {  amount: 10  })</span>
+								</code></pre>
+							</div>
+							<div class="right react-bg center">
+								ХЗ, ДОБАВИТЬ
+							</div>
+						</div>
+					</section>
+					<section class="about-vue about-react horizontal-layout">
+						<div class="half-by-half horizontal" style="text-align: center">
+							<div class="left vue-bg center">
+								<pre><code data-trim data-noescape class="js">
+actions: {
+  actionA ({ commit }) {
+    return new Promise((resolve, reject) => {
+      // resolve or reject
+    })
+  }
+}
+//...
+<span class="fragment">store.dispatch('actionA').then(() => { //...</span>
+								</code></pre>
+							</div>
+							<div class="right react-bg center">
+								ХЗ, ДОБАВИТЬ
+							</div>
+						</div>
+					</section>
+					<section data-background="img/food.jpg" data-background-size="cover">
+						<aside class="notes">
+							Vuex похож на сухпай для солдата:
+						</aside>
+					</section>
+					<section data-background="img/food.jpg" data-background-size="cover" data-background-blur>
+						<h3>Vuex vs Redux</h3>
+						<ul>
+							<li class="fragment">Чуть больше сахара</li>
+							<li class="fragment">Проще</li>
+						</ul>
 					</section>
 				</section>
 
