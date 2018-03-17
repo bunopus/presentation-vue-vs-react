@@ -541,6 +541,16 @@ data () {
 								</code></pre>
 							</div>
 							<div class="right react-bg center">
+								<pre class="fragment"><code data-trim data-noescape class="js">
+const store = createStore(rootReducer)
+<span class="fragment">//...
+render(
+  &lt;Provider store={store}&gt;
+    <span class="non-highlight-code">&lt;App /&gt;
+  &lt;/Provider&gt;,
+  document.getElementById('root')</span>
+)</span>
+								</code></pre>
 							</div>
 						</div>
 					</section>
@@ -559,7 +569,11 @@ const Shawermeter = {
 								</code></pre>
 							</div>
 							<div class="right react-bg center">
-								ХЗ, ДОБАВИТЬ
+								<pre class="fragment"><code data-trim data-noescape class="js">
+function Shawermeter({state}) {
+  return &lt;div&gt;{ state.score }&lt;/div&gt;
+}
+								</code></pre>
 							</div>
 						</div>
 					</section>
@@ -583,7 +597,10 @@ const Shawermeter = {
 								</code></pre>
 							</div>
 							<div class="right react-bg center">
-								ХЗ, ДОБАВИТЬ
+								<ol>
+									<li class="fragment">Перестраиваем state</li>
+									<li class="fragment">Вычисляем в функции render</li>
+								</ol>
 							</div>
 						</div>
 					</section>
@@ -607,7 +624,7 @@ const store = new Vuex.Store({
 								</code></pre>
 							</div>
 							<div class="right react-bg center">
-								ХЗ, ДОБАВИТЬ
+								<h5 class="fragment">Action<span class="fragment"> -> reducer</span><span class="fragment"> -> store update</span></h5>
 							</div>
 						</div>
 					</section>
@@ -622,7 +639,7 @@ const store = new Vuex.Store({
 								</ul>
 							</div>
 							<div class="right react-bg center">
-								ХЗ, ДОБАВИТЬ
+								<h5 class="fragment">Action -> reducer -> store update</h5>
 							</div>
 						</div>
 					</section>
@@ -645,7 +662,15 @@ actions: {
 								</code></pre>
 							</div>
 							<div class="right react-bg center">
-								ХЗ, ДОБАВИТЬ
+								<pre class="fragment"><code data-trim data-noescape class="js">
+function incrementAsync(amount) {
+  return function(dispatch) {
+    setTimeout(() => {
+      dispatch({type: 'increment', amount}), 1000)
+    }
+  }
+}
+								</code></pre>
 							</div>
 						</div>
 					</section>
@@ -665,7 +690,7 @@ actions: {
 								</code></pre>
 							</div>
 							<div class="right react-bg center">
-								ХЗ, ДОБАВИТЬ
+								<h3 class="fragment">¯\_(ツ)_/¯</h3>
 							</div>
 						</div>
 					</section>
