@@ -607,6 +607,7 @@ function Shawermeter({state}) {
 					</section>
 					<section>
 						<h5>Мутации</h5>
+						<span class="fragment" data-state="mutant"></span>
 					</section>
 					<section class="about-vue about-react horizontal-layout">
 						<div class="half-by-half horizontal" style="text-align: center">
@@ -788,6 +789,8 @@ actions: {
 			</div>
 		</div>
 		<img id="h_joke" src="img/h.png" style="display: none; position: absolute; top: 50%; left: 50px; z-index: 100">
+		<img id="mutant" src="img/mutant.png" style="display: none; position: absolute; top: 45%; left: 50px; z-index: 101; height: 800px; animation-duration: 800ms;     transform: rotate(20deg);
+">
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
@@ -847,16 +850,26 @@ actions: {
                 if (event.fragment.getAttribute('data-state') === 'h_joke') {
                     $("#h_joke").show().addClass('animated bounceInUp');
                 }
+                if (event.fragment.getAttribute('data-state') === 'mutant') {
+                    $("#mutant").show().addClass('animated slideInLeft');
+                    setTimeout(function () {
+                        $("#mutant").show().addClass('animated slideOutLeft');
+                    }, 2000)
+                }
             });
 
             Reveal.addEventListener( 'fragmenthidden', function( event ) {
                 if(event.fragment.getAttribute('data-state') === 'h_joke'){
                     $("#h_joke").hide();
                 }
+                if(event.fragment.getAttribute('data-state') === 'mutant'){
+                    $("#mutant").hide();
+                }
             } );
 
             Reveal.addEventListener( 'slidechanged', function( event ) {
                     $("#h_joke").hide();
+                    $("#mutant").hide();
             } );
 		</script>
 	</body>
