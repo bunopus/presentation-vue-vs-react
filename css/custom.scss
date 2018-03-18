@@ -272,14 +272,15 @@
   }
 
   .comparsion-table {
+    box-sizing: border-box;
     height: 100vh;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 100px;
 
     img {
-     padding-bottom: 50px
+      margin: 20px auto;
+      display: block;
     }
 
     .winner {
