@@ -1,0 +1,260 @@
+.reveal .progress, .reveal .controls {
+  background: rgba(0, 0, 0, 0.2);
+  color: #dd8105; }
+
+.reveal section {
+  padding: 0 !important;
+  font-family: Geometria, serif;
+  color: black; }
+  .reveal section img {
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin: 0; }
+  .reveal section h1, .reveal section h2, .reveal section h3, .reveal section h4, .reveal section h5, .reveal section h6 {
+    font-family: Geometria, serif;
+    color: black; }
+    .reveal section h1:not(.plain), .reveal section h2:not(.plain), .reveal section h3:not(.plain), .reveal section h4:not(.plain), .reveal section h5:not(.plain), .reveal section h6:not(.plain) {
+      padding-bottom: 50px; }
+  .reveal section h5 {
+    font-size: 1.4em;
+    text-transform: none;
+    font-weight: normal; }
+  .reveal section h3 {
+    font-size: 1.6em; }
+  .reveal section h2 {
+    font-size: 2em; }
+  .reveal section h1 {
+    font-size: 2.5em; }
+  .reveal section a {
+    color: #dd8105; }
+    .reveal section a:hover {
+      color: rgba(221, 129, 5, 0.52); }
+  .reveal section .half-by-half {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    height: 100vh; }
+    .reveal section .half-by-half img {
+      max-height: 100%;
+      max-width: 100%; }
+    .reveal section .half-by-half .left {
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+      min-height: 100%;
+      max-width: 50%;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+    .reveal section .half-by-half .right {
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+      height: 100%;
+      max-width: 50%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+    .reveal section .half-by-half .angular-bg {
+      background-color: rgba(181, 46, 43, 0.1); }
+    .reveal section .half-by-half .react-bg {
+      background-color: rgba(84, 140, 241, 0.1); }
+    .reveal section .half-by-half .vue-bg {
+      background-color: rgba(42, 124, 66, 0.1); }
+    .reveal section .half-by-half.horizontal {
+      min-height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .reveal section .half-by-half.horizontal div {
+        -ms-flex: 1;
+            flex: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center;
+        max-width: 100%;
+        max-height: 50%;
+        min-height: 50%;
+        width: 100%; }
+        .reveal section .half-by-half.horizontal div.center {
+          -ms-flex-align: center;
+              align-items: center; }
+  .reveal section .eg_info {
+    direction: rtl;
+    text-align: right;
+    margin-right: 150px; }
+  .reveal section .it_info {
+    text-align: left;
+    margin-left: 150px; }
+  .reveal section .fragments-inplace .fragment:not(.current-fragment):not(.fade-out) {
+    visibility: hidden; }
+  .reveal section img.illustration {
+    width: 400px; }
+  .reveal section li {
+    padding-bottom: 20px; }
+  .reveal section.chapter h1 {
+    padding-bottom: 50px; }
+    .reveal section.chapter h1 p {
+      display: inline-block;
+      line-height: 1em;
+      border-bottom: 2px solid black; }
+  .reveal section.chapter img {
+    height: 300px; }
+  .reveal section pre {
+    box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 15px; }
+  .reveal section code {
+    border-radius: 15px;
+    padding: 30px;
+    max-height: 1500px;
+    font-size: 30px;
+    line-height: 35px;
+    overflow: hidden;
+    font-family: Menlo, monospace; }
+    .reveal section code .fragment.highlight-blue.visible, .reveal section code mark {
+      background-color: rgba(59, 138, 203, 0.51); }
+    .reveal section code .non-highlight-code {
+      opacity: 0.1; }
+  .reveal section.console {
+    text-align: center;
+    text-align: -webkit-center; }
+    .reveal section.console .wrapper {
+      box-shadow: 1px 3px 15px 2px rgba(0, 0, 0, 0.75);
+      border-radius: 5px;
+      width: 1035px;
+      height: 639px;
+      margin-top: 30px; }
+      .reveal section.console .wrapper svg {
+        font-family: Meslo, Menlo, monospace; }
+  .reveal section blockquote {
+    box-shadow: none; }
+  .reveal section .head-score {
+    margin-right: 20px; }
+
+.reveal .stats {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .reveal .stats .vue-npm,
+  .reveal .stats .ng-npm,
+  .reveal .stats .react-npm {
+    box-sizing: border-box;
+    position: relative;
+    height: 494px;
+    width: 538px;
+    border: 2px solid transparent; }
+    .reveal .stats .vue-npm::before,
+    .reveal .stats .ng-npm::before,
+    .reveal .stats .react-npm::before {
+      position: absolute;
+      content: '';
+      width: 70px;
+      height: 70px;
+      top: 10px;
+      right: 20px;
+      background: no-repeat center center;
+      background-size: contain; }
+    .reveal .stats .vue-npm.current-fragment,
+    .reveal .stats .ng-npm.current-fragment,
+    .reveal .stats .react-npm.current-fragment {
+      border-color: red; }
+  .reveal .stats .vue-npm {
+    background-image: url("../img/slides/vue-npm.png"); }
+    .reveal .stats .vue-npm::before {
+      background-image: url("../img/vue_logo.png"); }
+  .reveal .stats .ng-npm {
+    background-image: url("../img/slides/angular-npm.png"); }
+    .reveal .stats .ng-npm::before {
+      background-image: url("../img/ng_logo.png"); }
+  .reveal .stats .react-npm {
+    background-image: url("../img/slides/react-npm.png"); }
+    .reveal .stats .react-npm::before {
+      background-image: url("../img/react_logo.png"); }
+
+.reveal .replaceable-fragment-container {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
+
+.reveal .white-bg-container {
+  background: white;
+  height: 100%;
+  width: 100%; }
+
+.reveal div.slide-background.present[data-background-hash="img/atomic.jpgnullnullnullnullnullnullnullnull"] {
+  opacity: 0;
+  animation: fadein 5s forwards; }
+
+.reveal .comparsion-table {
+  box-sizing: border-box;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 100px; }
+  .reveal .comparsion-table img {
+    margin: 20px auto;
+    display: block; }
+  .reveal .comparsion-table .winner {
+    color: #dd8105;
+    font-size: 1.4em; }
+  .reveal .comparsion-table .loser {
+    color: rgba(0, 0, 0, 0.6); }
+
+.reveal .faces .avatar {
+  border-radius: 25px; }
+
+.reveal .faces .middle-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 100vh;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.reveal .faces .info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 100; }
+  .reveal .faces .info img.small-logo {
+    width: 50px;
+    margin: 0;
+    vertical-align: middle;
+    border-radius: 0; }
+  .reveal .faces .info a {
+    color: black; }
+
+body {
+  background: url("../img/bg.png") repeat; }
+
+.slide-background .white-bg {
+  background-color: #ffffff; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
