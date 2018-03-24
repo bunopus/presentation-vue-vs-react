@@ -30,15 +30,15 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                <section data-background="#FFFFFF"><img class="fragment" data-duration="2" data-animate="fadeIn" src="img/ministry.png" height="500"></section>
-				<section data-background="img/title.png" class="about-vue about-react"></section>
-				<section data-background="img/about_eg.png">
+                <section data-background="#FFFFFF" data-hide-meter><img class="fragment" data-duration="2" data-animate="fadeIn" src="img/ministry.png" height="500"></section>
+				<section data-background="img/title.png" class="about-vue about-react" data-hide-meter></section>
+				<section data-background="img/about_eg.png" data-hide-meter>
 					<div class="eg_info">
 						<h3 class="plain">Евгений Гусев</h3>
 						<img src="img/wrike_logo.png" style="width: 250px; margin-bottom: 50px">
 					</div>
 				</section>
-				<section data-background="img/about_it.png" data-state="hide-meter">
+				<section data-background="img/about_it.png" data-hide-meter>
 					<div class="it_info">
 						<h3 class="plain">Илья Таратухин</h3>
 						<div style="position:relative; height: 150px;" class="fragments-inplace">
@@ -54,7 +54,7 @@
 						</div>
 					</div>
 				</section>
-				<section>
+				<section data-hide-meter>
 					<section data-background="img/chapters/0-who-are-you.png">
 					</section>
 					<section data-background="img/chapters/0-who-are-you.png" data-background-color="rgba(0,0,0,0)">
@@ -81,7 +81,7 @@
 						</aside>
 					</section>
 				</section>
-				<section>
+				<section data-hide-meter>
 					<section>
 						<h2>Почему Vue?</h2>
 					</section>
@@ -100,10 +100,10 @@
 						<img src="img/slides/vue-devtools.png" alt="">
 					</section>
 				</section>
-				<section data-background="img/rifle.png">
+				<section data-background="img/rifle.png" data-hide-meter>
 				  	<div style="height: 600px"><h1>Какой план?</h1></div>
 				</section>
-				<section data-background="img/rifle.png" data-background-color="rgba(0,0,0,0)" data-transition="none" data-background-transition="none">
+				<section data-background="img/rifle.png" data-background-color="rgba(0,0,0,0)" data-transition="none" data-background-transition="none" data-hide-meter>
 					<div style="height: 600px">
 						<h1>Какой план?</h1>
 						<ul>
@@ -114,10 +114,10 @@
 						</ul>
 					</div>
 				</section>
-
+				<section>QR code</section>
 
 				<section>
-					<section class="chapter">
+					<section class="chapter" data-hide-meter>
 						<h1><p>1. КМБ</p></h1>
 						<img src="img/chapters/1-assembly.png">
                         <aside class="notes">
@@ -179,7 +179,7 @@
 					<h2><a href="https://vue-react.herokuapp.com/shwarm/" data-preview-link>$$$ Соц. сеть $$$</a></h2>
 				</section>
 				<section>
-                    <section class="chapter">
+                    <section class="chapter" data-hide-meter>
                         <h1><p>2. DOM</p></h1>
                         <img src="img/chapters/2-dom.png" style="height: 350px">
                         <aside class="notes">
@@ -402,7 +402,7 @@ export function createElement (tagName: string, vnode: VNode): Element {
 				</section>
 
 				<section>
-					<section class="chapter">
+					<section class="chapter" data-hide-meter>
 						<h1><p>3. Binding</p></h1>
 						<img src="img/chapters/3-binding.png" style="height: 350px">
 						<aside class="notes">
@@ -439,7 +439,7 @@ export default {
 							</div>
 						</div>
 					</section>
-                    <section data-background="img/atomic.jpg" data-transition="fade-in" data-transition-speed="slow">
+                    <section data-background="img/atomic.jpg" data-transition="fade-in" data-transition-speed="slow" data-hide-meter>
                         <h1 data-animate="fadeIn" data-duration="5" data-delay="1" style="font-size: 6em">АТОМЫ</h1>
                     </section>
 					<section class="vue">
@@ -485,42 +485,25 @@ data () {
 					<section>
 						<h3>Проблемы?</h3>
 					</section>
-					<section data-background="img/bomb.jpeg" data-background-size="cover">
+					<section data-background="img/bomb.jpeg" data-background-size="cover" data-hide-meter>
 						<aside class="notes">
 							Знаете что это? Это "Толстяк. Бомба, которую сбросили на Хиросиму. Но вообще могли бы сбросить Vue, ведь...
 						</aside>
 					</section>
-					<section data-background="img/bomb.jpeg" data-background-size="cover" data-background-color="rgba(0,0,0,0)">
+					<section data-background="img/bomb.jpeg" data-background-size="cover" data-background-color="rgba(0,0,0,0)" data-hide-meter>
 						<h5>Memory Overhead (20x)</h5>
 						<p>40b -> 760b</p>
 					</section>
-                    <!--<section>-->
-                    <!--сравнить с Ангуляр-->
-                    <!-- - что такое зоны-->
-                    <!-- - когда они плохи-->
-                    <!-- - onPush?-->
-                    <!--</section>-->
-                    <!--<section>-->
-                    <!--сравнить с реакт-->
-                    <!-- - все оч тупо-->
-                    <!-- - дергаем руками по-сути ререндер-->
-                    <!-- - shouldComponentUpdate-->
-                    <!--</section>-->
-                    <!--<section>-->
-                    <!--проблемы такого подхода (атомов)-->
-                    <!-- - issue with controls-->
-                    <!-- - память-->
-                    <!--&lt;!&ndash; EG посмотреть overhead&ndash;&gt;-->
-                    <!--</section>-->
-          <section data-background="white">
-            <img src="img/control_problem_1.png" alt="">
-            <img src="img/control_problem_2.png" alt="" class="fragment">
-          </section>
+
+					  <section data-background="white">
+						<img src="img/control_problem_1.png" alt="">
+						<img src="img/control_problem_2.png" alt="" class="fragment">
+					  </section>
 				</section>
 
 
 				<section>
-                    <section class="chapter">
+                    <section class="chapter" data-hide-meter>
                         <h1><p>4. Data flow</p></h1>
                         <img src="img/chapters/4-data-flow.png" style="height: 300px">
                         <aside class="notes">
@@ -700,12 +683,12 @@ actions: {
 							</div>
 						</div>
 					</section>
-					<section data-background="img/food.jpg" data-background-size="cover">
+					<section data-background="img/food.jpg" data-background-size="cover" data-hide-meter>
 						<aside class="notes">
 							Vuex похож на сухпай для солдата:
 						</aside>
 					</section>
-					<section data-background="img/food.jpg" data-background-size="cover" data-background-color="rgba(0,0,0,0)">
+					<section data-background="img/food.jpg" data-background-size="cover" data-background-color="rgba(0,0,0,0)" data-hide-meter>
 						<h3>Vuex vs Redux</h3>
 						<ul>
 							<li class="fragment">Чуть больше сахара</li>
@@ -714,7 +697,7 @@ actions: {
 					</section>
 				</section>
 
-				<section>
+				<section data-hide-meter>
 					<section class="chapter">
 						<h1><p>5. Выводы</p></h1>
 						<img src="img/chapters/5-comparsion.png" style="height: 350px">
@@ -754,14 +737,15 @@ actions: {
 						</aside>
 					</section>
 				</section>
-				<section>
+				<section> показать большой чарт</section>
+				<section data-hide-meter>
 					<section data-background="img/chapters/6-end.png" data-background-size="cover">
 					</section>
 					<section data-background="img/chapters/6-end.png" data-background-size="cover" data-background-color="rgba(0,0,0,0)">
 						<h1>Конец</h1>
 					</section>
 				</section>
-				<section>
+				<section data-hide-meter>
 					<div class="half-by-half faces">
 						<div class="left">
 							<div class="middle-content"><img src="img/eg.jpg" class="avatar">
@@ -795,7 +779,18 @@ actions: {
 		<img id="h_joke" src="img/h.png" style="display: none; position: absolute; top: 50%; left: 50px; z-index: 100">
 		<img id="mutant" src="img/mutant.png" style="display: none; position: absolute; top: 45%; left: 50px; z-index: 101; height: 800px; animation-duration: 800ms;     transform: rotate(20deg);
 ">
-		<script src="lib/js/head.min.js"></script>
+
+
+        <div id="poll-container">
+            <canvas id="poll" width="100" height="100"></canvas>
+            <span class="numbers">
+                <span class="vue"></span>
+                <span class="react"></span>
+                <span class="angular"></span>
+            </span>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
@@ -803,6 +798,7 @@ actions: {
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+                controls: false,
                 history: true,
                 width: "100%",
                 height: "100%",
@@ -819,9 +815,11 @@ actions: {
 					{ src: 'plugin/corner-logos/corner-logos.js' },
 					{ src: 'plugin/blur-background/blur-background.js' },
 					{ src: 'plugin/script-runner/script-runner.js' },
-					{ src: 'plugin/code-fragment-highlight/code-fragment-highlight.js' }
+					{ src: 'plugin/code-fragment-highlight/code-fragment-highlight.js' },
+                    { src: 'bower_components/chart.js/dist/Chart.bundle.js' },
+                    { src: 'js/poll.js' },
 
-				],
+                ],
 				cornerLogos: {
                     'about-vue': 'img/vue_logo.png',
                     'about-react': 'img/react_logo.png',
