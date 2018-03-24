@@ -196,6 +196,27 @@
 					<section data-background="img/slides/vdom/5.png" data-background-size="contain"></section>
 					<section data-background="img/slides/vdom/6.png" data-background-size="contain"></section>
 
+          <section class="about-vue about-ng">
+            <div class="half-by-half">
+              <div class="left vue-bg" style="position: relative">
+                <div class="fragment replaceable-fragment-container white-bg-container">
+                  <img src="img/slides/vdom/1-vue-ng.png">
+                </div>
+                <div class="fragment replaceable-fragment-container white-bg-container">
+                  <img src="img/slides/vdom/2-vue.png">
+                </div>
+              </div>
+              <div class="right angular-bg" style="position: relative">
+                <div class="fragment replaceable-fragment-container white-bg-container">
+                  <img src="img/slides/vdom/1-vue-ng.png">
+                </div>
+                <div class="fragment replaceable-fragment-container white-bg-container">
+                  <img src="img/slides/vdom/2-ng.png">
+                </div>
+              </div>
+            </div>
+          </section>
+
 					<section class="about-vue">
 						<p>SFC -> JS</p>
 						<pre><code data-trim data-noescape class="html" style="position: relative"><div class="fragment" data-fragment-index="1" style="position: absolute; top: 350px; left: 40px;"><img src="img/babel.svg" height="100"></div><div class="fragment" data-fragment-index="3" style="position: absolute; top: 650px; left: 40px;"><img src="img/postcss.svg" height="150"></div><span class="fragment code-highlight" data-fragment-index="4">&lt;template&gt;
@@ -351,29 +372,50 @@ export function createElement (tagName: string, vnode: VNode): Element {
 					<section data-background="img/slides/keys/1.png" data-background-size="contain"></section>
 					<section data-background="img/slides/keys/2.png" data-background-size="contain"></section>
 					<section data-background="img/slides/keys/3.png" data-background-size="contain"></section>
-                    <section class="about-vue about-ng">
-                        <div class="half-by-half">
-                            <div class="left vue-bg"><img src="img/slides/keys/4-vue.png" class="fragment"></div>
-                            <div class="right angular-bg"><img src="img/slides/keys/5-ng.png" class="fragment"></div>
-                        </div>
-                    </section>
-					<section class="about-vue about-ng" data-background-color="white">
-						<div class="half-by-half">
-							<div class="left vue-bg" style="position: relative">
-								<div class="fragment replaceable-fragment-container white-bg-container">
-									<img src="img/slides/keys/6-vue-pre.png">
-								</div>
-								<div class="fragment replaceable-fragment-container white-bg-container">
-									<img src="img/slides/keys/7-vue-pre.png">
-								</div>
-							</div>
-							<div class="right angular-bg">
-								<div class="fragment white-bg-container">
-									<img src="img/slides/keys/8-ng-pre.png">
-								</div>
-							</div>
-						</div>
-					</section>
+          <section class="about-vue about-ng">
+            <div class="half-by-half">
+              <div class="left vue-bg" style="position: relative">
+                <div class="fragment replaceable-fragment-container white-bg-container pt300">
+                  <img src="img/slides/keys/3-1-vue.png">
+                </div>
+                <div class="fragment replaceable-fragment-container white-bg-container pt300">
+                  <img src="img/slides/keys/3-2-vue.png">
+                </div>
+              </div>
+              <div class="right angular-bg" style="position: relative">
+                <div class="fragment replaceable-fragment-container white-bg-container pt200">
+                  <img src="img/slides/keys/3-1-ng.png">
+                </div>
+                <div class="fragment replaceable-fragment-container white-bg-container pt200">
+                  <img src="img/slides/keys/3-2-ng.png">
+                </div>
+              </div>
+            </div>
+          </section>
+
+                    <!--<section class="about-vue about-ng">-->
+                        <!--<div class="half-by-half">-->
+                            <!--<div class="left vue-bg"><img src="img/slides/keys/4-vue.png" class="fragment"></div>-->
+                            <!--<div class="right angular-bg"><img src="img/slides/keys/5-ng.png" class="fragment"></div>-->
+                        <!--</div>-->
+                    <!--</section>-->
+					<!--<section class="about-vue about-ng" data-background-color="white">-->
+						<!--<div class="half-by-half">-->
+							<!--<div class="left vue-bg" style="position: relative">-->
+								<!--<div class="fragment replaceable-fragment-container white-bg-container">-->
+									<!--<img src="img/slides/keys/6-vue-pre.png">-->
+								<!--</div>-->
+								<!--<div class="fragment replaceable-fragment-container white-bg-container">-->
+									<!--<img src="img/slides/keys/7-vue-pre.png">-->
+								<!--</div>-->
+							<!--</div>-->
+							<!--<div class="right angular-bg">-->
+								<!--<div class="fragment white-bg-container">-->
+									<!--<img src="img/slides/keys/8-ng-pre.png">-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</section>-->
 					<section class="about-react">
 						Reuse Dom - Vue (key), React (key), Angular (trackBy)
 						<pre><code data-trim data-noescape class="html">
@@ -399,6 +441,27 @@ export function createElement (tagName: string, vnode: VNode): Element {
             &lt;div data-v-469af010=&quot;&quot; &gt;
                         </code></pre>
 					</section>
+
+          <section>
+            <div class="comparsion-table">
+
+              <img src="img/vue_logo.png">
+              <img src="img/react_logo.png">
+              <img src="img/ng_logo.png">
+
+              <div class="fragment winner">Классические шаблоны/JSX</div>
+              <div class="fragment">JSX</div>
+              <div class="fragment">Классические шаблоны</div>
+
+              <div class="fragment">Классический VDOM</div>
+              <div class="fragment winner">React Fiber</div>
+              <div class="fragment loser">¯\_(ツ)_/¯</div>
+
+              <div class="fragment loser">SSR на функциях</div>
+              <div class="fragment loser">SSR на функциях</div>
+              <div class="fragment loser">SSR на функциях</div>
+            </div>
+          </section>
 				</section>
 
 				<section>
@@ -499,6 +562,27 @@ data () {
 						<img src="img/control_problem_1.png" alt="">
 						<img src="img/control_problem_2.png" alt="" class="fragment">
 					  </section>
+          <section>
+            <div class="comparsion-table">
+
+              <img src="img/vue_logo.png">
+              <img src="img/react_logo.png">
+              <img src="img/ng_logo.png">
+
+              <div class="winner">Классические шаблоны/JSX</div>
+              <div>JSX</div>
+              <div>Классические шаблоны</div>
+
+              <div>Классический VDOM</div>
+              <div class="winner">React Fiber</div>
+              <div class="loser">¯\_(ツ)_/¯</div>
+
+              <div class="fragment winner">Атомы</div>
+              <div class="fragment loser">Ничего :-(</div>
+              <div class="fragment winner">Зоны</div>
+
+            </div>
+          </section>
 				</section>
 
 
@@ -711,10 +795,6 @@ actions: {
 							<img src="img/react_logo.png">
 							<img src="img/ng_logo.png">
 
-              <div class="fragment winner">Атомы</div>
-              <div class="fragment loser">Ничего :-(</div>
-              <div class="fragment winner">Зоны</div>
-
               <div class="fragment winner">Классические шаблоны/JSX</div>
               <div class="fragment">JSX</div>
               <div class="fragment">Классические шаблоны</div>
@@ -723,9 +803,13 @@ actions: {
               <div class="fragment winner">React Fiber</div>
               <div class="fragment loser">¯\_(ツ)_/¯</div>
 
+              <div class="fragment winner">Атомы</div>
+              <div class="fragment loser">Ничего :-(</div>
+              <div class="fragment winner">Зоны</div>
+
               <div class="fragment"><u>Универсальность</u></div>
               <div class="fragment"><u>Кастомизация</u></div>
-			  <div class="fragment"><u>Фичи</u></div>
+			        <div class="fragment"><u>Фичи</u></div>
 						</div>
 						<aside class="notes">
 							Выводы - чем хорош чем плох

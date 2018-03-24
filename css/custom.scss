@@ -257,6 +257,14 @@
     margin-right: auto;
     left: 0;
     right: 0;
+
+    &.pt300 {
+      padding-top: 300px;
+    }
+
+    &.pt200 {
+      padding-top: 200px;
+    }
   }
 
   .white-bg-container {
