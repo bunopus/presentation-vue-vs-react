@@ -270,6 +270,21 @@
     opacity: 0;
     animation: fadein 5s forwards;
   }
+  div.slide-background.present[data-background-hash="img/chapters/6-end.pngcovernullnullnullrgba(0,0,0,0)nullnullnull"] {
+    filter: blur(20px) opacity(50%);
+  }
+  div.slide-background.present[data-background-hash="img/chapters/0-who-are-you.pngnullnullnullnullrgba(0,0,0,0)nullnullnull"] {
+    filter: blur(20px) opacity(50%);
+  }
+  div.slide-background.present[data-background-hash="img/rifle.pngnullnullnullnullrgba(0,0,0,0)nullnullnone"] {
+    filter: blur(20px) opacity(50%);
+  }
+  div.slide-background.present[data-background-hash="img/bomb.jpegcovernullnullnullrgba(0,0,0,0)nullnullnull"] {
+    filter: blur(20px) opacity(50%);
+  }
+  div.slide-background.present[data-background-hash="img/food.jpgcovernullnullnullrgba(0,0,0,0)nullnullnull"] {
+    filter: blur(20px) opacity(50%);
+  }
 
   .comparsion-table {
     box-sizing: border-box;
@@ -345,3 +360,4 @@ body {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+

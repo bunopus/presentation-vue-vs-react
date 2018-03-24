@@ -197,6 +197,26 @@
   opacity: 0;
   animation: fadein 5s forwards; }
 
+.reveal div.slide-background.present[data-background-hash="img/chapters/6-end.pngcovernullnullnullrgba(0,0,0,0)nullnullnull"] {
+  -webkit-filter: blur(20px) opacity(50%);
+          filter: blur(20px) opacity(50%); }
+
+.reveal div.slide-background.present[data-background-hash="img/chapters/0-who-are-you.pngnullnullnullnullrgba(0,0,0,0)nullnullnull"] {
+  -webkit-filter: blur(20px) opacity(50%);
+          filter: blur(20px) opacity(50%); }
+
+.reveal div.slide-background.present[data-background-hash="img/rifle.pngnullnullnullnullrgba(0,0,0,0)nullnullnone"] {
+  -webkit-filter: blur(20px) opacity(50%);
+          filter: blur(20px) opacity(50%); }
+
+.reveal div.slide-background.present[data-background-hash="img/bomb.jpegcovernullnullnullrgba(0,0,0,0)nullnullnull"] {
+  -webkit-filter: blur(20px) opacity(50%);
+          filter: blur(20px) opacity(50%); }
+
+.reveal div.slide-background.present[data-background-hash="img/food.jpgcovernullnullnullrgba(0,0,0,0)nullnullnull"] {
+  -webkit-filter: blur(20px) opacity(50%);
+          filter: blur(20px) opacity(50%); }
+
 .reveal .comparsion-table {
   box-sizing: border-box;
   height: 100vh;
