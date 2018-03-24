@@ -89,10 +89,10 @@
   .reveal section .eg_info {
     direction: rtl;
     text-align: right;
-    margin-right: 150px; }
+    margin-right: 100px; }
   .reveal section .it_info {
     text-align: left;
-    margin-left: 150px; }
+    margin-left: 100px; }
   .reveal section .fragments-inplace .fragment:not(.current-fragment):not(.fade-out) {
     visibility: hidden; }
   .reveal section img.illustration {
