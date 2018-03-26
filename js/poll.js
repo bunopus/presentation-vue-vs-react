@@ -26,14 +26,16 @@ Reveal.addEventListener( 'ready', function() {
         }
     });
 
-    setInterval(function(){
-        updateChart(chart, getRandomInt(100), getRandomInt(100), getRandomInt(100));
+    setInterval(function () {
+        $.get('/stats', (data) => {
+            var parsed = {};
+            $.each(data, function (i, stat) {
+                parsed[stat._id] = stat.count;
+            });
+            updateChart(chart, parsed.vue || 0, parsed.react || 0, parsed.angular || 0);
+        });
     }, 2000)
 });
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
 
 function updateChart(chart,vue, react, angular) {
     chart.data.datasets[0].data = [vue, react, angular];
