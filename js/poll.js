@@ -33,7 +33,9 @@ Reveal.addEventListener( 'ready', function() {
             $.each(data, function (i, stat) {
                 parsed[stat._id] = stat.count;
             });
-            showPoll(parsed.vue || parsed.react || parsed.angular);
+            if(!parsed.vue && !parsed.react && !parsed.angular) {
+                showPoll(false);
+            }
             updateChart(chart, parsed.vue || 0, parsed.react || 0, parsed.angular || 0);
         });
     }, 2000)
@@ -54,7 +56,7 @@ function setNumber(numb, framework) {
 
 function showPoll(show) {
     if (show) {
-        $('#poll-container').show();
+        $('#poll-container').show().css('display', 'flex');
     } else {
         $('#poll-container').hide();
     }
@@ -62,7 +64,6 @@ function showPoll(show) {
 
 Reveal.addEventListener('slidechanged', function( event ) {
     $('#poll-container').toggleClass('full-screen', event.currentSlide.hasAttribute('data-meter-fullscreen'));
-    chart.update();
     var hide = (event.currentSlide.hasAttribute('data-hide-meter') || event.currentSlide.parentElement.hasAttribute('data-hide-meter'))
     showPoll(!hide);
 });
