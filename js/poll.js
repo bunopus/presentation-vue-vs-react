@@ -1,7 +1,8 @@
 
+let chart;
 Reveal.addEventListener( 'ready', function() {
     let ctx = document.getElementById('poll').getContext('2d');
-    let chart = new Chart(ctx, {
+    chart = new Chart(ctx, {
         type: 'pie',
         data: {
             datasets: [{
@@ -12,7 +13,7 @@ Reveal.addEventListener( 'ready', function() {
         },
 
         options: {
-            responsive: false,
+            responsive: true,
             maintainAspectRatio: false,
             layout: {
                 padding: {
@@ -60,5 +61,8 @@ function showPoll(show) {
 }
 
 Reveal.addEventListener('slidechanged', function( event ) {
-    showPoll(event.currentSlide.hasAttribute('data-hide-meter') || event.currentSlide.parentElement.hasAttribute('data-hide-meter'))
+    $('#poll-container').toggleClass('full-screen', event.currentSlide.hasAttribute('data-meter-fullscreen'));
+    chart.update();
+    var hide = (event.currentSlide.hasAttribute('data-hide-meter') || event.currentSlide.parentElement.hasAttribute('data-hide-meter'))
+    showPoll(!hide);
 });

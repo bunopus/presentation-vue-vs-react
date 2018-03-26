@@ -370,8 +370,11 @@ body {
   right: 10px;
   text-align: center;
   display: none;
-  opacity: 0.6;
+  z-index: 120;
   .numbers {
+    padding-top: 10px;
+    font-family: Geometria, serif;
+    display: block;
     .vue {
       color: #4dba87
     }
@@ -383,6 +386,30 @@ body {
     .angular {
       color: #e23237
     }
+  }
+  .chart-container {
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+  }
+  &.full-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .chart-container {
+      width: 800px;
+      height: 800px;
+      opacity: 1;
+    }
+
+    .numbers {
+      padding-top: 30px;
+      font-size: 60px;
+    }
+
   }
 }
 
