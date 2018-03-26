@@ -32,6 +32,7 @@ Reveal.addEventListener( 'ready', function() {
             $.each(data, function (i, stat) {
                 parsed[stat._id] = stat.count;
             });
+            showPoll(parsed.vue || parsed.react || parsed.angular);
             updateChart(chart, parsed.vue || 0, parsed.react || 0, parsed.angular || 0);
         });
     }, 2000)
@@ -50,10 +51,14 @@ function setNumber(numb, framework) {
     $("#poll-container").find(`.${framework}`).text(`${numb}`);
 }
 
-Reveal.addEventListener('slidechanged', function( event ) {
-    if (event.currentSlide.hasAttribute('data-hide-meter') || event.currentSlide.parentElement.hasAttribute('data-hide-meter')) {
-        $('#poll-container').hide();
-    } else {
+function showPoll(show) {
+    if (show) {
         $('#poll-container').show();
+    } else {
+        $('#poll-container').hide();
     }
+}
+
+Reveal.addEventListener('slidechanged', function( event ) {
+    showPoll(event.currentSlide.hasAttribute('data-hide-meter') || event.currentSlide.parentElement.hasAttribute('data-hide-meter'))
 });
