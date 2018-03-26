@@ -306,7 +306,9 @@ body {
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    opacity: 0;
+    animation: fadein 2s forwards; }
     #poll-container.full-screen .chart-container {
       width: 800px;
       height: 800px;
