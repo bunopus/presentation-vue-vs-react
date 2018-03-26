@@ -187,6 +187,10 @@
   margin-right: auto;
   left: 0;
   right: 0; }
+  .reveal .replaceable-fragment-container.pt300 {
+    padding-top: 300px; }
+  .reveal .replaceable-fragment-container.pt200 {
+    padding-top: 200px; }
 
 .reveal .white-bg-container {
   background: white;
