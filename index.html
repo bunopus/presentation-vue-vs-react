@@ -665,9 +665,13 @@ const Shawermeter = {
 							</div>
 							<div class="right react-bg center">
 								<pre class="fragment"><code data-trim data-noescape class="js">
-function Shawermeter({state}) {
-  return &lt;div&gt;{ state.score }&lt;/div&gt;
+function Shawermeter({score}) {
+  return &lt;div&gt;{ score }&lt;/div&gt;
 }
+
+<span class="fragment">export default connect(
+    state => {score: state.score}
+  )(Shawermeter)</span>
 								</code></pre>
 							</div>
 						</div>
@@ -786,7 +790,16 @@ actions: {
 								</code></pre>
 							</div>
 							<div class="right react-bg center">
-								<h3 class="fragment">¯\_(ツ)_/¯</h3>
+                <pre class="fragment"><code data-trim data-noescape class="js">
+function actionA(data) {
+  return function(dispatch) {
+    <span class="fragment">dispatch({type: 'startActionA'})</span>
+    <span class="fragment">asyncFunction.then(dispatch({type: 'endActionA', data})</span>
+  }
+}
+<span class="fragment">//...
+dispatch(actionA), 1000).then(() => { //...</span>
+								</code></pre>
 							</div>
 						</div>
 					</section>
