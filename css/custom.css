@@ -235,6 +235,15 @@
     font-size: 1.4em; }
   .reveal .comparsion-table .loser {
     color: rgba(0, 0, 0, 0.6); }
+  .reveal .comparsion-table .opaque {
+    opacity: 0.3; }
+  .reveal .comparsion-table div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
 
 .reveal .faces .avatar {
   border-radius: 25px; }

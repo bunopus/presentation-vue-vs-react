@@ -314,6 +314,16 @@
     .loser {
       color: rgba(0, 0, 0, 0.6);
     }
+
+    .opaque {
+      opacity: 0.3;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .faces {
