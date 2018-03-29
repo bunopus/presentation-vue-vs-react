@@ -1,240 +1,240 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Vue vs React</title>
+    <title>Vue vs React</title>
 
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
 
-        <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="lib/css/pojoaque.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/pojoaque.css">
 
-        <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-		<link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="fonts/font.css">
 
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-                <section data-background="#FFFFFF" data-hide-meter><img class="fragment" data-duration="2" data-animate="fadeIn" src="img/ministry.png" height="500"></section>
-				<section data-background="img/title.png" class="about-vue about-react" data-hide-meter></section>
-				<section data-background="img/about_eg.png" data-hide-meter>
-					<div class="eg_info">
-						<h3 class="plain">Евгений Гусев</h3>
-						<img src="img/wrike_logo.png" style="width: 250px; margin-bottom: 50px">
-					</div>
-				</section>
-				<section data-background="img/about_it.png" data-hide-meter>
-					<div class="it_info">
-						<h3 class="plain">Илья Таратухин</h3>
-						<div style="position:relative; height: 150px;" class="fragments-inplace">
-							<div class="fragment fade-out" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
-								<img src="img/2gis_logo.png" style="width: 250px;">
-							</div>
-							<div class="fragment" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
-								<img src="img/wrike_logo.png" style="width: 250px;">
-							</div>
-							<div class="fragment" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
-								<img src="img/vk_logo.png" class="plain" style="width: 150px; margin-left: -20px;">
-							</div>
-						</div>
-					</div>
-				</section>
-				<section data-hide-meter>
-					<section data-background="img/chapters/0-who-are-you.png">
-					</section>
-					<section data-background="img/chapters/0-who-are-you.png" data-background-color="rgba(0,0,0,0)">
-						<h1 class="plain">Вы кто такие?</h1>
-					</section>
-					<section>
-						<h4>1) Мы идём в ногу со временем</h4>
-						<img src="img/illustrations/1-v-nogu.png" class="illustration">
-					</section>
-					<section>
-						<h4>2) Профессионалы Vue</h4>
-						<img src="img/illustrations/2-ruka.png" class="illustration">
-						<aside class="notes">
-							Есть в зале те, кто профессионально пишет на Vue несколько лет? <br>
-							  - Много рук: что ж, мы дадим вам взгляд на Vue со стороны других технологий<br>
-							  - Мало рук: мы постараемся рассказать вам, зачем он нужен с тех же позиций что и у вас
-						</aside>
-					</section>
-					<section>
-						<h4>3) Мы видели некоторое дерьмо</h4>
-						<img src="img/illustrations/3-videli.png" class="illustration">
-						<aside class="notes">
-							Мы тоже не лохи, писали много на чём, так что разобраться в одном фреймворке уж сможем
-						</aside>
-					</section>
-				</section>
-				<section data-hide-meter>
-					<section>
-						<h2>Почему Vue?</h2>
-					</section>
-					<section data-background="img/slides/stat.png" data-background-size="contain" class="white-bg"></section>
-					<section class="white-bg">
-						<img src="img/slides/vue-gh.png" alt="">
-						<img src="img/slides/angular-gh.png" alt="" class="fragment">
-						<img src="img/slides/react-gh.png" alt="" class="fragment">
-						<div class="stats">
-							<div class="vue-npm fragment"></div>
-							<div class="ng-npm fragment"></div>
-							<div class="react-npm fragment"></div>
-						</div>
-					</section>
-					<section>
-						<img src="img/slides/vue-devtools.png" alt="">
-					</section>
-          <section>
-            <div class="comparsion-table">
-
-              <img src="img/vue_logo.png">
-              <img src="img/react_logo.png">
-              <img src="img/ng_logo.png">
-
-              <div class="fragment">~30Kb</div>
-              <div class="fragment">~35Kb</div>
-              <div class="fragment">~42Kb</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-background="#FFFFFF" data-hide-meter><img class="fragment" data-duration="2" data-animate="fadeIn" src="img/ministry.png" height="500"></section>
+        <section data-background="img/title.png" class="about-vue about-react" data-hide-meter></section>
+        <section data-background="img/about_eg.png" data-hide-meter>
+            <div class="eg_info">
+                <h3 class="plain">Евгений Гусев</h3>
+                <img src="img/wrike_logo.png" style="width: 250px; margin-bottom: 50px">
             </div>
-          </section>
-				</section>
-				<section data-background="img/rifle.png" data-hide-meter>
-				  	<div style="height: 600px"><h1>Какой план?</h1></div>
-				</section>
-				<section data-background="img/rifle.png" data-background-color="rgba(0,0,0,0)" data-transition="none" data-background-transition="none" data-hide-meter>
-					<div style="height: 600px">
-						<h1>Какой план?</h1>
-						<ul>
-                            <li class="fragment">Будем сравнивать с react, иногда с angular</li>
-                            <li class="fragment">Разберем сильные стороны</li>
-                            <li class="fragment">Обратим внимание на слабые стороны</li>
-                            <li class="fragment">Дадим рекомендации</li>
-						</ul>
-					</div>
-				</section>
-				<section>
-                    <img src="img/qr.png" style="height: 500px; padding-bottom: 20px">
-                    <h3 style="text-transform: none">http://bit.ly/vue-react-ng</H3>
-                </section>
-
-				<section>
-					<section class="chapter" data-hide-meter>
-						<h1><p>1. КМБ</p></h1>
-						<img src="img/chapters/1-assembly.png">
-                        <aside class="notes">
-                            Кто не знает, что такое КМБ? Поговорим про сборку и прочее
-                        </aside>
-					</section>
-					<section class="about-vue">
-						<h3>Установка</h3>
-						<ul>
-							<li class="fragment">через CDN включив &lt;script&gt; тег в HTML</li>
-							<li class="fragment">через npm</li>
-							<li class="fragment">через Bower</li>
-							<li class="fragment">используя Vue-cli</li>
-						</ul>
-					</section>
-					<section class="console about-vue" data-svg-console>
-						<h3>Vue-cli</h3>
-						<div class="wrapper">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1035" height="639"><rect width="1035" height="639" rx="5" ry="5" class="a"/><circle cx="20" cy="20" r="10.5" fill="#ff5f58"/><circle cx="54" cy="20" r="10.5" fill="#ffbd2e"/><circle cx="88" cy="20" r="10.5" fill="#18c132"/><svg height="586.17" viewBox="0 0 101 58.617" width="1010" x="12.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="40"><style>@keyframes o{0%{transform:translateX(-101px)}.4%{transform:translateX(-505px)}1.2%{transform:translateX(-606px)}6.8%{transform:translateX(-707px)}10%{transform:translateX(-909px)}17.5%{transform:translateX(-1010px)}19.7%{transform:translateX(-1414px)}20.3%{transform:translateX(-1717px)}20.9%{transform:translateX(-2020px)}21.5%{transform:translateX(-2222px)}22.2%{transform:translateX(-2525px)}22.8%{transform:translateX(-2727px)}23.4%{transform:translateX(-3030px)}24%{transform:translateX(-3232px)}24.6%{transform:translateX(-3434px)}25.3%{transform:translateX(-3636px)}25.9%{transform:translateX(-3838px)}26.5%{transform:translateX(-4040px)}27.1%{transform:translateX(-4242px)}27.7%{transform:translateX(-4444px)}28.3%{transform:translateX(-4747px)}29%{transform:translateX(-5050px)}29.6%{transform:translateX(-5252px)}30.2%{transform:translateX(-5454px)}30.8%{transform:translateX(-5656px)}31.5%{transform:translateX(-5858px)}32.1%{transform:translateX(-6060px)}32.6%{transform:translateX(-6262px)}33%{transform:translateX(-6565px)}40.6%{transform:translateX(-6969px)}40.7%{transform:translateX(-7272px)}47.3%{transform:translateX(-7878px)}53.1%{transform:translateX(-8080px)}53.2%{transform:translateX(-8686px)}57.7%{transform:translateX(-9090px)}57.8%{transform:translateX(-9292px)}64.1%{transform:translateX(-9797px)}72.3%{transform:translateX(-10403px)}79.4%{transform:translateX(-11110px)}84.5%{transform:translateX(-11817px)}88.5%{transform:translateX(-12524px)}91.6%{transform:translateX(-13332px)}95.4%{transform:translateX(-13736px)}96%{transform:translateX(-14039px)}to{transform:translateX(-14140px)}}.a{fill:#212121}.f{fill:#d0d0d0}.g{fill:#71bef2}.i{fill:#6c99bb}.j{fill:#7dd6cf}.k{fill:#7e8e50}.l{fill:#d0d0d0;font-weight:700}.m{fill:#505050}</style><g font-size="1.67" font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace"><defs><symbol id="1">0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text></symbol><symbol id="2">0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text><text x="20.04" y="1.67" class="f">vue</text><text x="24.048" y="1.67" class="f">init</text><text x="29.058" y="1.67" class="f">webpack</text><text x="37.074" y="1.67" class="f">vue-test</text></symbol><symbol id="3"><text y="1.67" class="j">⠋</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="4"><text y="1.67" class="j">⠙</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="5"><text y="1.67" class="j">⠹</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="6"><text y="1.67" class="j">⠸</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="7"><text y="1.67" class="j">⠼</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="8"><text y="1.67" class="j">⠴</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="9"><text y="1.67" class="j">⠦</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="10"><text y="1.67" class="j">⠧</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="11"><text y="1.67" class="j">⠇</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="12"><text y="1.67" class="j">⠏</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="13"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">name</text><text x="15.03" y="1.67" class="f">(vue-test)</text></symbol><symbol id="14"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">name</text><text x="15.03" y="1.67" class="j">vue-test</text></symbol><symbol id="15"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">description</text><text x="22.044" y="1.67" class="f">(A</text><text x="25.05" y="1.67" class="f">Vue.js</text><text x="32.064" y="1.67" class="f">project)</text></symbol><symbol id="16"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">description</text><text x="22.044" y="1.67" class="j">A</text><text x="24.048" y="1.67" class="j">Vue.js</text><text x="31.062" y="1.67" class="j">project</text></symbol><symbol id="17"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Author</text><text x="9.018" y="1.67" class="f">(Evgeny</text><text x="17.034" y="1.67" class="f">Gusev</text><text x="23.046" y="1.67" class="f">&lt;bunopus@gmail.com&gt;)</text></symbol><symbol id="18"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Author</text><text x="9.018" y="1.67" class="j">Evgeny</text><text x="16.032" y="1.67" class="j">Gusev</text><text x="22.044" y="1.67" class="j">&lt;bunopus@gmail.com&gt;</text></symbol><symbol id="19"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Vue</text><text x="6.012" y="1.67" class="l">build</text><text x="12.024" y="1.67" class="f">(Use</text><text x="17.034" y="1.67" class="f">arrow</text><text x="23.046" y="1.67" class="f">keys)</text></symbol><symbol id="20"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Runtime</text><text x="10.02" y="1.67" class="j">+</text><text x="12.024" y="1.67" class="j">Compiler:</text><text x="22.044" y="1.67" class="j">recommended</text><text x="34.068" y="1.67" class="j">for</text><text x="38.076" y="1.67" class="j">most</text><text x="43.086" y="1.67" class="j">users</text></symbol><symbol id="21"><text x="2.004" y="1.67" class="f">Runtime-only:</text><text x="16.032" y="1.67" class="f">about</text><text x="22.044" y="1.67" class="f">6KB</text><text x="26.052" y="1.67" class="f">lighter</text><text x="34.068" y="1.67" class="f">min+gzip,</text><text x="44.088" y="1.67" class="f">but</text><text x="48.096" y="1.67" class="f">templates</text><text x="58.116" y="1.67" class="f">(or</text><text x="62.124" y="1.67" class="f">any</text><text x="66.132" y="1.67" class="f">Vue-specific</text><text x="79.158" y="1.67" class="f">HTML)</text><text x="85.17" y="1.67" class="f">are</text><text x="89.178" y="1.67" class="f">ONLY</text><text x="94.188" y="1.67" class="f">allowed</text></symbol><symbol id="22"><text x="1.002" y="1.67" class="f">in</text><text x="4.008" y="1.67" class="f">.vue</text><text x="9.018" y="1.67" class="f">files</text><text x="15.03" y="1.67" class="f">-</text><text x="17.034" y="1.67" class="f">render</text><text x="24.048" y="1.67" class="f">functions</text><text x="34.068" y="1.67" class="f">are</text><text x="38.076" y="1.67" class="f">required</text><text x="47.094" y="1.67" class="f">elsewhere</text></symbol><symbol id="23"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Vue</text><text x="6.012" y="1.67" class="l">build</text><text x="12.024" y="1.67" class="j">standalone</text></symbol><symbol id="24"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Install</text><text x="10.02" y="1.67" class="l">vue-router?</text><text x="22.044" y="1.67" class="f">(Y/n)</text></symbol><symbol id="25"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Install</text><text x="10.02" y="1.67" class="l">vue-router?</text><text x="22.044" y="1.67" class="j">Yes</text></symbol><symbol id="26"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Use</text><text x="6.012" y="1.67" class="l">ESLint</text><text x="13.026" y="1.67" class="l">to</text><text x="16.032" y="1.67" class="l">lint</text><text x="21.042" y="1.67" class="l">your</text><text x="26.052" y="1.67" class="l">code?</text><text x="32.064" y="1.67" class="f">(Y/n)</text></symbol><symbol id="27"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Use</text><text x="6.012" y="1.67" class="l">ESLint</text><text x="13.026" y="1.67" class="l">to</text><text x="16.032" y="1.67" class="l">lint</text><text x="21.042" y="1.67" class="l">your</text><text x="26.052" y="1.67" class="l">code?</text><text x="32.064" y="1.67" class="j">Yes</text></symbol><symbol id="28"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">an</text><text x="10.02" y="1.67" class="l">ESLint</text><text x="17.034" y="1.67" class="l">preset</text><text x="24.048" y="1.67" class="f">(Use</text><text x="29.058" y="1.67" class="f">arrow</text><text x="35.07" y="1.67" class="f">keys)</text></symbol><symbol id="29"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Standard</text><text x="11.022" y="1.67" class="j">(https://github.com/standard/standard)</text></symbol><symbol id="30"><text x="2.004" y="1.67" class="f">Airbnb</text><text x="9.018" y="1.67" class="f">(https://github.com/airbnb/javascript)</text></symbol><symbol id="31"><text x="2.004" y="1.67" class="f">none</text><text x="7.014" y="1.67" class="f">(configure</text><text x="18.036" y="1.67" class="f">it</text><text x="21.042" y="1.67" class="f">yourself)</text></symbol><symbol id="32"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">an</text><text x="10.02" y="1.67" class="l">ESLint</text><text x="17.034" y="1.67" class="l">preset</text><text x="24.048" y="1.67" class="j">Standard</text></symbol><symbol id="33"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Set</text><text x="6.012" y="1.67" class="l">up</text><text x="9.018" y="1.67" class="l">unit</text><text x="14.028" y="1.67" class="l">tests</text><text x="20.04" y="1.67" class="f">(Y/n)</text></symbol><symbol id="34"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Set</text><text x="6.012" y="1.67" class="l">up</text><text x="9.018" y="1.67" class="l">unit</text><text x="14.028" y="1.67" class="l">tests</text><text x="20.04" y="1.67" class="j">Yes</text></symbol><symbol id="35"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">a</text><text x="9.018" y="1.67" class="l">test</text><text x="14.028" y="1.67" class="l">runner</text><text x="21.042" y="1.67" class="f">(Use</text><text x="26.052" y="1.67" class="f">arrow</text><text x="32.064" y="1.67" class="f">keys)</text></symbol><symbol id="36"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Jest</text></symbol><symbol id="37"><text x="2.004" y="1.67" class="f">Karma</text><text x="8.016" y="1.67" class="f">and</text><text x="12.024" y="1.67" class="f">Mocha</text></symbol><symbol id="38"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">a</text><text x="9.018" y="1.67" class="l">test</text><text x="14.028" y="1.67" class="l">runner</text><text x="21.042" y="1.67" class="j">jest</text></symbol><symbol id="39"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Setup</text><text x="8.016" y="1.67" class="l">e2e</text><text x="12.024" y="1.67" class="l">tests</text><text x="18.036" y="1.67" class="l">with</text><text x="23.046" y="1.67" class="l">Nightwatch?</text><text x="35.07" y="1.67" class="f">(Y/n)</text></symbol><symbol id="40"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Setup</text><text x="8.016" y="1.67" class="l">e2e</text><text x="12.024" y="1.67" class="l">tests</text><text x="18.036" y="1.67" class="l">with</text><text x="23.046" y="1.67" class="l">Nightwatch?</text><text x="35.07" y="1.67" class="j">Yes</text></symbol><symbol id="41"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Should</text><text x="9.018" y="1.67" class="l">we</text><text x="12.024" y="1.67" class="l">run</text><text x="16.032" y="1.67" class="l">`npm</text><text x="21.042" y="1.67" class="l">install`</text><text x="30.06" y="1.67" class="l">for</text><text x="34.068" y="1.67" class="l">you</text><text x="38.076" y="1.67" class="l">after</text><text x="44.088" y="1.67" class="l">the</text><text x="48.096" y="1.67" class="l">project</text><text x="56.112" y="1.67" class="l">has</text><text x="60.12" y="1.67" class="l">been</text><text x="65.13" y="1.67" class="l">created?</text><text x="74.148" y="1.67" class="l">(recommended)</text><text x="88.176" y="1.67" class="f">(Use</text><text x="93.186" y="1.67" class="f">arrow</text><text x="99.198" y="1.67" class="f">ke</text></symbol><symbol id="42"><text y="1.67" class="f">ys)</text></symbol><symbol id="43"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Yes,</text><text x="7.014" y="1.67" class="j">use</text><text x="11.022" y="1.67" class="j">NPM</text></symbol><symbol id="44"><text x="2.004" y="1.67" class="f">Yes,</text><text x="7.014" y="1.67" class="f">use</text><text x="11.022" y="1.67" class="f">Yarn</text></symbol><symbol id="45"><text x="2.004" y="1.67" class="f">No,</text><text x="6.012" y="1.67" class="f">I</text><text x="8.016" y="1.67" class="f">will</text><text x="13.026" y="1.67" class="f">handle</text><text x="20.04" y="1.67" class="f">that</text><text x="25.05" y="1.67" class="f">myself</text></symbol><symbol id="46"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Should</text><text x="9.018" y="1.67" class="l">we</text><text x="12.024" y="1.67" class="l">run</text><text x="16.032" y="1.67" class="l">`npm</text><text x="21.042" y="1.67" class="l">install`</text><text x="30.06" y="1.67" class="l">for</text><text x="34.068" y="1.67" class="l">you</text><text x="38.076" y="1.67" class="l">after</text><text x="44.088" y="1.67" class="l">the</text><text x="48.096" y="1.67" class="l">project</text><text x="56.112" y="1.67" class="l">has</text><text x="60.12" y="1.67" class="l">been</text><text x="65.13" y="1.67" class="l">created?</text><text x="74.148" y="1.67" class="l">(recommended)</text><text x="88.176" y="1.67" class="j">npm</text></symbol><symbol id="47"><text x="3.006" y="1.67" class="f">vue-cli</text><text x="11.022" y="1.67" class="m">·</text><text x="13.026" y="1.67" class="f">Generated</text><text x="23.046" y="1.67" class="f">&quot;vue-test&quot;.</text></symbol><symbol id="48"><text y="1.67" class="f">#</text><text x="2.004" y="1.67" class="k">Installing</text><text x="13.026" y="1.67" class="k">project</text><text x="21.042" y="1.67" class="k">dependencies</text><text x="34.068" y="1.67" class="k">...</text></symbol><symbol id="49"><text y="1.67" class="f">#</text><text x="2.004" y="1.67" class="f">========================</text></symbol><symbol id="a"><path fill="transparent" d="M0 0h101v27H0z"/></symbol><symbol id="b"><path class="f" d="M0 0h1.102v2.171H0z"/></symbol></defs><path class="a" d="M0 0h101v58.617H0z"/><g style="animation-duration:13.420276999999997s;animation-iteration-count:1;animation-name:o;animation-fill-mode: forwards;animation-timing-function:steps(1,end)"><svg width="14241"><svg><use xlink:href="#a"/><use xlink:href="#b" x="-.004"/></svg><svg x="101"><use xlink:href="#a"/><use xlink:href="#b" x="-.004"/></svg><svg x="202"><use xlink:href="#a"/><use xlink:href="#b" x="19.996"/><use xlink:href="#1"/></svg><svg x="303"><use xlink:href="#a"/><use xlink:href="#b" x="19.996"/><use xlink:href="#1"/></svg><svg x="404"><use xlink:href="#a"/><use xlink:href="#b" x="19.996"/><use xlink:href="#1"/></svg><svg x="505"><use xlink:href="#a"/><use xlink:href="#b" x="20.996"/>0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text><text x="20.04" y="1.67" class="f">v</text><text x="21.042" y="1.67" class="m">ue</text><text x="24.048" y="1.67" class="m">init</text><text x="29.058" y="1.67" class="m">webpack</text><text x="37.074" y="1.67" class="m">vue-test</text></svg><svg x="606"><use xlink:href="#a"/><use xlink:href="#b" x="21.996"/>0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text><text x="20.04" y="1.67" class="f">vu</text><text x="22.044" y="1.67" class="m">e</text><text x="24.048" y="1.67" class="m">init</text><text x="29.058" y="1.67" class="m">webpack</text><text x="37.074" y="1.67" class="m">vue-test</text></svg><svg x="707"><use xlink:href="#a"/><use xlink:href="#b" x="44.996"/><use xlink:href="#2"/></svg><svg x="808"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="2.146"/><use xlink:href="#2"/></svg><svg x="909"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="2.146"/><use xlink:href="#2"/></svg><svg x="1010"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/></svg><svg x="1111"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1212"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1313"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1414"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#3" y="4.342"/></svg><svg x="1515"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1616"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1717"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#4" y="4.342"/></svg><svg x="1818"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1919"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2020"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#5" y="4.342"/></svg><svg x="2121"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2222"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#6" y="4.342"/></svg><svg x="2323"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2424"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2525"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#7" y="4.342"/></svg><svg x="2626"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2727"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#8" y="4.342"/></svg><svg x="2828"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2929"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3030"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#9" y="4.342"/></svg><svg x="3131"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3232"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#10" y="4.342"/></svg><svg x="3333"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3434"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#11" y="4.342"/></svg><svg x="3535"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3636"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#12" y="4.342"/></svg><svg x="3737"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3838"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#3" y="4.342"/></svg><svg x="3939"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4040"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#4" y="4.342"/></svg><svg x="4141"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4242"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#5" y="4.342"/></svg><svg x="4343"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4444"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#6" y="4.342"/></svg><svg x="4545"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4646"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4747"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#7" y="4.342"/></svg><svg x="4848"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4949"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5050"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#8" y="4.342"/></svg><svg x="5151"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5252"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#9" y="4.342"/></svg><svg x="5353"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5454"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#10" y="4.342"/></svg><svg x="5555"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5656"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#11" y="4.342"/></svg><svg x="5757"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5858"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#12" y="4.342"/></svg><svg x="5959"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="6060"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#3" y="4.342"/></svg><svg x="6161"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="6262"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/></svg><svg x="6363"><use xlink:href="#a"/><use xlink:href="#b" x="25.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#13" y="4.342"/></svg><svg x="6464"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/><use xlink:href="#13" y="4.342"/></svg><svg x="6565"><use xlink:href="#a"/><use xlink:href="#b" x="25.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#13" y="4.342"/></svg><svg x="6666"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/></svg><svg x="6767"><use xlink:href="#a"/><use xlink:href="#b" x="22.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="6868"><use xlink:href="#a"/><use xlink:href="#b" x="22.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="6969"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="7070"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#15" y="6.513"/></svg><svg x="7171"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#15" y="6.513"/></svg><svg x="7272"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#15" y="6.513"/></svg><svg x="7373"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="7474"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="7575"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="7676"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="7777"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#17" y="8.684"/></svg><svg x="7878"><use xlink:href="#a"/><use xlink:href="#b" x="43.996" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#17" y="8.684"/></svg><svg x="7979"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="8080"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8181"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8282"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8383"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="10.83"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8484"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8585"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#19" y="10.855"/><use xlink:href="#20" y="13.026"/><use xlink:href="#21" y="15.197"/><use xlink:href="#22" y="17.368"/></svg><svg x="8686"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#19" y="10.855"/><use xlink:href="#20" y="13.026"/><use xlink:href="#21" y="15.197"/><use xlink:href="#22" y="17.368"/></svg><svg x="8787"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8888"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="8989"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="9090"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="9191"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#24" y="13.026"/></svg><svg x="9292"><use xlink:href="#a"/><use xlink:href="#b" x="27.996" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#24" y="13.026"/></svg><svg x="9393"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="9494"><use xlink:href="#a"/><use xlink:href="#b" x="24.996" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/></svg><svg x="9595"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/></svg><svg x="9696"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#26" y="15.197"/></svg><svg x="9797"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#26" y="15.197"/></svg><svg x="9898"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/></svg><svg x="9999"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10100"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="17.343"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10201"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10302"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#28" y="17.368"/><use xlink:href="#29" y="19.539"/><use xlink:href="#30" y="21.71"/><use xlink:href="#31" y="23.881"/></svg><svg x="10403"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#28" y="17.368"/><use xlink:href="#29" y="19.539"/><use xlink:href="#30" y="21.71"/><use xlink:href="#31" y="23.881"/></svg><svg x="10504"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10605"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="10706"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="10807"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="10908"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="11009"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#33" y="19.539"/></svg><svg x="11110"><use xlink:href="#a"/><use xlink:href="#b" x="25.996" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#33" y="19.539"/></svg><svg x="11211"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="11312"><use xlink:href="#a"/><use xlink:href="#b" x="22.996" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11413"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11514"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="21.685"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11615"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11716"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#35" y="21.71"/><use xlink:href="#36" y="23.881"/><use xlink:href="#37" y="26.052"/><use xlink:href="#31" y="28.223"/></svg><svg x="11817"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#35" y="21.71"/><use xlink:href="#36" y="23.881"/><use xlink:href="#37" y="26.052"/><use xlink:href="#31" y="28.223"/></svg><svg x="11918"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="12019"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12120"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12221"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12322"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12423"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#39" y="23.881"/></svg><svg x="12524"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#39" y="23.881"/></svg><svg x="12625"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12726"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="12827"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="12928"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13029"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="26.027"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13130"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13231"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#41" y="26.052"/><use xlink:href="#42" y="28.223"/><use xlink:href="#43" y="30.394"/><use xlink:href="#44" y="32.565"/><use xlink:href="#45" y="34.736"/></svg><svg x="13332"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#41" y="26.052"/><use xlink:href="#42" y="28.223"/><use xlink:href="#43" y="30.394"/><use xlink:href="#44" y="32.565"/><use xlink:href="#45" y="34.736"/></svg><svg x="13433"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13534"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13635"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13736"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="28.198"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13837"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="30.369"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13938"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="32.54"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/><use xlink:href="#47" y="30.394"/></svg><svg x="14039"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="43.395"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/><use xlink:href="#47" y="30.394"/><use xlink:href="#48" y="36.907"/><use xlink:href="#49" y="39.078"/></svg><svg x="14140"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/><use xlink:href="#47" y="30.394"/><use xlink:href="#48" y="36.907"/><use xlink:href="#49" y="39.078"/></svg></svg></g></g></svg></svg>
-						</div>
-					</section>
-                    <section class="about-vue about-react horizontal-layout" data-transition="none">
-                        <div class="half-by-half horizontal" style="text-align: center">
-                            <div class="left vue-bg center">
-                                <ul>
-                                    <li class="fragment">спрашивает при установке, чего ты хочешь</li>
-                                    <li class="fragment">предлагает большое количество шаблонов</li>
-                                    <li class="fragment">позволяет делать шаблоны самому</li>
-                                </ul>
-                            </div>
-                            <div class="right react-bg center">
-                                <h3 class="fragment">¯\_(ツ)_/¯</h3>
-                            </div>
-                        </div>
-                    </section>
-					<section class="about-react">
-						<h3>"Философия" create-react-app</h3>
-						<blockquote>
-							<b>One Dependency:</b>There is just one build dependency.<br><br>
-
-							<b>No Configuration Required</b>: You don't need to configure anything.<br><br>
-
-							<b>No Lock-In</b>: You can “eject” to a custom setup at any time.<br>
-						</blockquote>
-						<span class="fragment" data-state="h_joke"></span>
-					</section>
-                    <section>
-                        <h2>Итого:</h2>
-                        <div class="fragment" data-duration="3" data-animate="tada" data-delay="1.2">
-                            <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.2">
-                            <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.4">
-                            <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.6">
-                            <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.8">
-                            <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="1.0">
-                        </div>
-                    </section>
-				</section>
-				<section>
-					<h2><a href="https://vue-react.herokuapp.com/shwarm/" data-preview-link>$$$ Соц. сеть $$$</a></h2>
-				</section>
-				<section>
-                    <section class="chapter" data-hide-meter>
-                        <h1><p>2. DOM</p></h1>
-                        <img src="img/chapters/2-dom.png" style="height: 350px">
-                        <aside class="notes">
-                            [EG] - Мы решили пойти немного другим путём чем раньше, давайте возьмём несколько основных моментов, но копнём глубже. Так как и реакт и Vue - это View - то на дом больше всего времени
-                        </aside>
-                    </section>
-					<section>
-						<h5>Virtual DOM. Как он работает?</h5>
-					</section>
-					<section data-background="img/slides/vdom/1.png" data-background-size="contain"></section>
-					<section data-background="img/slides/vdom/2.png" data-background-size="contain"></section>
-					<section data-background="img/slides/vdom/3.png" data-background-size="contain"></section>
-					<section data-background="img/slides/vdom/4.png" data-background-size="contain"></section>
-					<section data-background="img/slides/vdom/5.png" data-background-size="contain"></section>
-					<section data-background="img/slides/vdom/6.png" data-background-size="contain"></section>
-
-          <section class="about-vue about-ng">
-            <div class="half-by-half">
-              <div class="left vue-bg" style="position: relative">
-                <div class="fragment replaceable-fragment-container white-bg-container">
-                  <img src="img/slides/vdom/1-vue-ng.png">
+        </section>
+        <section data-background="img/about_it.png" data-hide-meter>
+            <div class="it_info">
+                <h3 class="plain">Илья Таратухин</h3>
+                <div style="position:relative; height: 150px;" class="fragments-inplace">
+                    <div class="fragment fade-out" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
+                        <img src="img/2gis_logo.png" style="width: 250px;">
+                    </div>
+                    <div class="fragment" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
+                        <img src="img/wrike_logo.png" style="width: 250px;">
+                    </div>
+                    <div class="fragment" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+                        <img src="img/vk_logo.png" class="plain" style="width: 150px; margin-left: -20px;">
+                    </div>
                 </div>
-                <div class="fragment replaceable-fragment-container white-bg-container">
-                  <img src="img/slides/vdom/2-vue.png">
-                </div>
-              </div>
-              <div class="right angular-bg" style="position: relative">
-                <div class="fragment replaceable-fragment-container white-bg-container">
-                  <img src="img/slides/vdom/1-vue-ng.png">
-                </div>
-                <div class="fragment replaceable-fragment-container white-bg-container">
-                  <img src="img/slides/vdom/2-ng.png">
-                </div>
-              </div>
             </div>
-          </section>
+        </section>
+        <section data-hide-meter>
+            <section data-background="img/chapters/0-who-are-you.png">
+            </section>
+            <section data-background="img/chapters/0-who-are-you.png" data-background-color="rgba(0,0,0,0)">
+                <h1 class="plain">Вы кто такие?</h1>
+            </section>
+            <section>
+                <h4>1) Мы идём в ногу со временем</h4>
+                <img src="img/illustrations/1-v-nogu.png" class="illustration">
+            </section>
+            <section>
+                <h4>2) В зале есть профессионалы Vue?</h4>
+                <img src="img/illustrations/2-ruka.png" class="illustration">
+                <aside class="notes">
+                    Есть в зале те, кто профессионально пишет на Vue несколько лет? <br>
+                    - Много рук: что ж, мы дадим вам взгляд на Vue со стороны других технологий<br>
+                    - Мало рук: мы постараемся рассказать вам, зачем он нужен с тех же позиций что и у вас
+                </aside>
+            </section>
+            <section>
+                <h4>3) Мы видели некоторое дерьмо</h4>
+                <img src="img/illustrations/3-videli.png" class="illustration">
+                <aside class="notes">
+                    Мы тоже не лохи, писали много на чём, так что разобраться в одном фреймворке уж сможем
+                </aside>
+            </section>
+        </section>
+        <section data-hide-meter>
+            <section>
+                <h2>Почему Vue?</h2>
+            </section>
+            <section data-background="img/slides/stat.png" data-background-size="contain" class="white-bg"></section>
+            <section class="white-bg">
+                <img src="img/slides/vue-gh.png" alt="">
+                <img src="img/slides/angular-gh.png" alt="" class="fragment">
+                <img src="img/slides/react-gh.png" alt="" class="fragment">
+                <div class="stats">
+                    <div class="vue-npm fragment"></div>
+                    <div class="ng-npm fragment"></div>
+                    <div class="react-npm fragment"></div>
+                </div>
+            </section>
+            <section>
+                <img src="img/slides/vue-devtools.png" alt="">
+            </section>
+            <section>
+                <div class="comparsion-table">
 
-					<section class="about-vue">
-						<p>SFC -> JS</p>
-						<pre><code data-trim data-noescape class="html" style="position: relative"><div class="fragment" data-fragment-index="1" style="position: absolute; top: 350px; left: 40px;"><img src="img/babel.svg" height="100"></div><div class="fragment" data-fragment-index="3" style="position: absolute; top: 650px; left: 40px;"><img src="img/postcss.svg" height="150"></div><span class="fragment code-highlight" data-fragment-index="4">&lt;template&gt;
+                    <img src="img/vue_logo.png">
+                    <img src="img/react_logo.png">
+                    <img src="img/ng_logo.png">
+
+                    <div class="fragment">~30Kb</div>
+                    <div class="fragment">~35Kb</div>
+                    <div class="fragment">~42Kb</div>
+                </div>
+            </section>
+        </section>
+        <section data-background="img/rifle.png" data-hide-meter>
+            <div style="height: 600px"><h1>Какой план?</h1></div>
+        </section>
+        <section data-background="img/rifle.png" data-background-color="rgba(0,0,0,0)" data-transition="none" data-background-transition="none" data-hide-meter>
+            <div style="height: 600px">
+                <h1>Какой план?</h1>
+                <ul>
+                    <li class="fragment">Будем сравнивать с react, иногда с angular</li>
+                    <li class="fragment">Разберем сильные стороны</li>
+                    <li class="fragment">Обратим внимание на слабые стороны</li>
+                    <li class="fragment">Дадим рекомендации</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <img src="img/qr.png" style="height: 500px; padding-bottom: 20px">
+            <h3 style="text-transform: none">http://bit.ly/vue-react-ng</H3>
+        </section>
+
+        <section>
+            <section class="chapter" data-hide-meter>
+                <h1><p>1. КМБ</p></h1>
+                <img src="img/chapters/1-assembly.png">
+                <aside class="notes">
+                    Кто не знает, что такое КМБ? Поговорим про сборку и прочее
+                </aside>
+            </section>
+            <section class="about-vue">
+                <h3>Установка</h3>
+                <ul>
+                    <li class="fragment">через CDN включив &lt;script&gt; тег в HTML</li>
+                    <li class="fragment">через npm</li>
+                    <li class="fragment">через Bower</li>
+                    <li class="fragment">используя Vue-cli</li>
+                </ul>
+            </section>
+            <section class="console about-vue" data-svg-console>
+                <h3>Vue-cli</h3>
+                <div class="wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1035" height="639"><rect width="1035" height="639" rx="5" ry="5" class="a"/><circle cx="20" cy="20" r="10.5" fill="#ff5f58"/><circle cx="54" cy="20" r="10.5" fill="#ffbd2e"/><circle cx="88" cy="20" r="10.5" fill="#18c132"/><svg height="586.17" viewBox="0 0 101 58.617" width="1010" x="12.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="40"><style>@keyframes o{0%{transform:translateX(-101px)}.4%{transform:translateX(-505px)}1.2%{transform:translateX(-606px)}6.8%{transform:translateX(-707px)}10%{transform:translateX(-909px)}17.5%{transform:translateX(-1010px)}19.7%{transform:translateX(-1414px)}20.3%{transform:translateX(-1717px)}20.9%{transform:translateX(-2020px)}21.5%{transform:translateX(-2222px)}22.2%{transform:translateX(-2525px)}22.8%{transform:translateX(-2727px)}23.4%{transform:translateX(-3030px)}24%{transform:translateX(-3232px)}24.6%{transform:translateX(-3434px)}25.3%{transform:translateX(-3636px)}25.9%{transform:translateX(-3838px)}26.5%{transform:translateX(-4040px)}27.1%{transform:translateX(-4242px)}27.7%{transform:translateX(-4444px)}28.3%{transform:translateX(-4747px)}29%{transform:translateX(-5050px)}29.6%{transform:translateX(-5252px)}30.2%{transform:translateX(-5454px)}30.8%{transform:translateX(-5656px)}31.5%{transform:translateX(-5858px)}32.1%{transform:translateX(-6060px)}32.6%{transform:translateX(-6262px)}33%{transform:translateX(-6565px)}40.6%{transform:translateX(-6969px)}40.7%{transform:translateX(-7272px)}47.3%{transform:translateX(-7878px)}53.1%{transform:translateX(-8080px)}53.2%{transform:translateX(-8686px)}57.7%{transform:translateX(-9090px)}57.8%{transform:translateX(-9292px)}64.1%{transform:translateX(-9797px)}72.3%{transform:translateX(-10403px)}79.4%{transform:translateX(-11110px)}84.5%{transform:translateX(-11817px)}88.5%{transform:translateX(-12524px)}91.6%{transform:translateX(-13332px)}95.4%{transform:translateX(-13736px)}96%{transform:translateX(-14039px)}to{transform:translateX(-14140px)}}.a{fill:#212121}.f{fill:#d0d0d0}.g{fill:#71bef2}.i{fill:#6c99bb}.j{fill:#7dd6cf}.k{fill:#7e8e50}.l{fill:#d0d0d0;font-weight:700}.m{fill:#505050}</style><g font-size="1.67" font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace"><defs><symbol id="1">0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text></symbol><symbol id="2">0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text><text x="20.04" y="1.67" class="f">vue</text><text x="24.048" y="1.67" class="f">init</text><text x="29.058" y="1.67" class="f">webpack</text><text x="37.074" y="1.67" class="f">vue-test</text></symbol><symbol id="3"><text y="1.67" class="j">⠋</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="4"><text y="1.67" class="j">⠙</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="5"><text y="1.67" class="j">⠹</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="6"><text y="1.67" class="j">⠸</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="7"><text y="1.67" class="j">⠼</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="8"><text y="1.67" class="j">⠴</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="9"><text y="1.67" class="j">⠦</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="10"><text y="1.67" class="j">⠧</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="11"><text y="1.67" class="j">⠇</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="12"><text y="1.67" class="j">⠏</text><text x="2.004" y="1.67" class="f">downloading</text><text x="14.028" y="1.67" class="f">template</text></symbol><symbol id="13"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">name</text><text x="15.03" y="1.67" class="f">(vue-test)</text></symbol><symbol id="14"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">name</text><text x="15.03" y="1.67" class="j">vue-test</text></symbol><symbol id="15"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">description</text><text x="22.044" y="1.67" class="f">(A</text><text x="25.05" y="1.67" class="f">Vue.js</text><text x="32.064" y="1.67" class="f">project)</text></symbol><symbol id="16"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Project</text><text x="10.02" y="1.67" class="l">description</text><text x="22.044" y="1.67" class="j">A</text><text x="24.048" y="1.67" class="j">Vue.js</text><text x="31.062" y="1.67" class="j">project</text></symbol><symbol id="17"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Author</text><text x="9.018" y="1.67" class="f">(Evgeny</text><text x="17.034" y="1.67" class="f">Gusev</text><text x="23.046" y="1.67" class="f">&lt;bunopus@gmail.com&gt;)</text></symbol><symbol id="18"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Author</text><text x="9.018" y="1.67" class="j">Evgeny</text><text x="16.032" y="1.67" class="j">Gusev</text><text x="22.044" y="1.67" class="j">&lt;bunopus@gmail.com&gt;</text></symbol><symbol id="19"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Vue</text><text x="6.012" y="1.67" class="l">build</text><text x="12.024" y="1.67" class="f">(Use</text><text x="17.034" y="1.67" class="f">arrow</text><text x="23.046" y="1.67" class="f">keys)</text></symbol><symbol id="20"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Runtime</text><text x="10.02" y="1.67" class="j">+</text><text x="12.024" y="1.67" class="j">Compiler:</text><text x="22.044" y="1.67" class="j">recommended</text><text x="34.068" y="1.67" class="j">for</text><text x="38.076" y="1.67" class="j">most</text><text x="43.086" y="1.67" class="j">users</text></symbol><symbol id="21"><text x="2.004" y="1.67" class="f">Runtime-only:</text><text x="16.032" y="1.67" class="f">about</text><text x="22.044" y="1.67" class="f">6KB</text><text x="26.052" y="1.67" class="f">lighter</text><text x="34.068" y="1.67" class="f">min+gzip,</text><text x="44.088" y="1.67" class="f">but</text><text x="48.096" y="1.67" class="f">templates</text><text x="58.116" y="1.67" class="f">(or</text><text x="62.124" y="1.67" class="f">any</text><text x="66.132" y="1.67" class="f">Vue-specific</text><text x="79.158" y="1.67" class="f">HTML)</text><text x="85.17" y="1.67" class="f">are</text><text x="89.178" y="1.67" class="f">ONLY</text><text x="94.188" y="1.67" class="f">allowed</text></symbol><symbol id="22"><text x="1.002" y="1.67" class="f">in</text><text x="4.008" y="1.67" class="f">.vue</text><text x="9.018" y="1.67" class="f">files</text><text x="15.03" y="1.67" class="f">-</text><text x="17.034" y="1.67" class="f">render</text><text x="24.048" y="1.67" class="f">functions</text><text x="34.068" y="1.67" class="f">are</text><text x="38.076" y="1.67" class="f">required</text><text x="47.094" y="1.67" class="f">elsewhere</text></symbol><symbol id="23"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Vue</text><text x="6.012" y="1.67" class="l">build</text><text x="12.024" y="1.67" class="j">standalone</text></symbol><symbol id="24"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Install</text><text x="10.02" y="1.67" class="l">vue-router?</text><text x="22.044" y="1.67" class="f">(Y/n)</text></symbol><symbol id="25"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Install</text><text x="10.02" y="1.67" class="l">vue-router?</text><text x="22.044" y="1.67" class="j">Yes</text></symbol><symbol id="26"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Use</text><text x="6.012" y="1.67" class="l">ESLint</text><text x="13.026" y="1.67" class="l">to</text><text x="16.032" y="1.67" class="l">lint</text><text x="21.042" y="1.67" class="l">your</text><text x="26.052" y="1.67" class="l">code?</text><text x="32.064" y="1.67" class="f">(Y/n)</text></symbol><symbol id="27"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Use</text><text x="6.012" y="1.67" class="l">ESLint</text><text x="13.026" y="1.67" class="l">to</text><text x="16.032" y="1.67" class="l">lint</text><text x="21.042" y="1.67" class="l">your</text><text x="26.052" y="1.67" class="l">code?</text><text x="32.064" y="1.67" class="j">Yes</text></symbol><symbol id="28"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">an</text><text x="10.02" y="1.67" class="l">ESLint</text><text x="17.034" y="1.67" class="l">preset</text><text x="24.048" y="1.67" class="f">(Use</text><text x="29.058" y="1.67" class="f">arrow</text><text x="35.07" y="1.67" class="f">keys)</text></symbol><symbol id="29"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Standard</text><text x="11.022" y="1.67" class="j">(https://github.com/standard/standard)</text></symbol><symbol id="30"><text x="2.004" y="1.67" class="f">Airbnb</text><text x="9.018" y="1.67" class="f">(https://github.com/airbnb/javascript)</text></symbol><symbol id="31"><text x="2.004" y="1.67" class="f">none</text><text x="7.014" y="1.67" class="f">(configure</text><text x="18.036" y="1.67" class="f">it</text><text x="21.042" y="1.67" class="f">yourself)</text></symbol><symbol id="32"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">an</text><text x="10.02" y="1.67" class="l">ESLint</text><text x="17.034" y="1.67" class="l">preset</text><text x="24.048" y="1.67" class="j">Standard</text></symbol><symbol id="33"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Set</text><text x="6.012" y="1.67" class="l">up</text><text x="9.018" y="1.67" class="l">unit</text><text x="14.028" y="1.67" class="l">tests</text><text x="20.04" y="1.67" class="f">(Y/n)</text></symbol><symbol id="34"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Set</text><text x="6.012" y="1.67" class="l">up</text><text x="9.018" y="1.67" class="l">unit</text><text x="14.028" y="1.67" class="l">tests</text><text x="20.04" y="1.67" class="j">Yes</text></symbol><symbol id="35"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">a</text><text x="9.018" y="1.67" class="l">test</text><text x="14.028" y="1.67" class="l">runner</text><text x="21.042" y="1.67" class="f">(Use</text><text x="26.052" y="1.67" class="f">arrow</text><text x="32.064" y="1.67" class="f">keys)</text></symbol><symbol id="36"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Jest</text></symbol><symbol id="37"><text x="2.004" y="1.67" class="f">Karma</text><text x="8.016" y="1.67" class="f">and</text><text x="12.024" y="1.67" class="f">Mocha</text></symbol><symbol id="38"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Pick</text><text x="7.014" y="1.67" class="l">a</text><text x="9.018" y="1.67" class="l">test</text><text x="14.028" y="1.67" class="l">runner</text><text x="21.042" y="1.67" class="j">jest</text></symbol><symbol id="39"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Setup</text><text x="8.016" y="1.67" class="l">e2e</text><text x="12.024" y="1.67" class="l">tests</text><text x="18.036" y="1.67" class="l">with</text><text x="23.046" y="1.67" class="l">Nightwatch?</text><text x="35.07" y="1.67" class="f">(Y/n)</text></symbol><symbol id="40"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Setup</text><text x="8.016" y="1.67" class="l">e2e</text><text x="12.024" y="1.67" class="l">tests</text><text x="18.036" y="1.67" class="l">with</text><text x="23.046" y="1.67" class="l">Nightwatch?</text><text x="35.07" y="1.67" class="j">Yes</text></symbol><symbol id="41"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Should</text><text x="9.018" y="1.67" class="l">we</text><text x="12.024" y="1.67" class="l">run</text><text x="16.032" y="1.67" class="l">`npm</text><text x="21.042" y="1.67" class="l">install`</text><text x="30.06" y="1.67" class="l">for</text><text x="34.068" y="1.67" class="l">you</text><text x="38.076" y="1.67" class="l">after</text><text x="44.088" y="1.67" class="l">the</text><text x="48.096" y="1.67" class="l">project</text><text x="56.112" y="1.67" class="l">has</text><text x="60.12" y="1.67" class="l">been</text><text x="65.13" y="1.67" class="l">created?</text><text x="74.148" y="1.67" class="l">(recommended)</text><text x="88.176" y="1.67" class="f">(Use</text><text x="93.186" y="1.67" class="f">arrow</text><text x="99.198" y="1.67" class="f">ke</text></symbol><symbol id="42"><text y="1.67" class="f">ys)</text></symbol><symbol id="43"><text y="1.67" class="j">❯</text><text x="2.004" y="1.67" class="j">Yes,</text><text x="7.014" y="1.67" class="j">use</text><text x="11.022" y="1.67" class="j">NPM</text></symbol><symbol id="44"><text x="2.004" y="1.67" class="f">Yes,</text><text x="7.014" y="1.67" class="f">use</text><text x="11.022" y="1.67" class="f">Yarn</text></symbol><symbol id="45"><text x="2.004" y="1.67" class="f">No,</text><text x="6.012" y="1.67" class="f">I</text><text x="8.016" y="1.67" class="f">will</text><text x="13.026" y="1.67" class="f">handle</text><text x="20.04" y="1.67" class="f">that</text><text x="25.05" y="1.67" class="f">myself</text></symbol><symbol id="46"><text y="1.67" class="k">?</text><text x="2.004" y="1.67" class="l">Should</text><text x="9.018" y="1.67" class="l">we</text><text x="12.024" y="1.67" class="l">run</text><text x="16.032" y="1.67" class="l">`npm</text><text x="21.042" y="1.67" class="l">install`</text><text x="30.06" y="1.67" class="l">for</text><text x="34.068" y="1.67" class="l">you</text><text x="38.076" y="1.67" class="l">after</text><text x="44.088" y="1.67" class="l">the</text><text x="48.096" y="1.67" class="l">project</text><text x="56.112" y="1.67" class="l">has</text><text x="60.12" y="1.67" class="l">been</text><text x="65.13" y="1.67" class="l">created?</text><text x="74.148" y="1.67" class="l">(recommended)</text><text x="88.176" y="1.67" class="j">npm</text></symbol><symbol id="47"><text x="3.006" y="1.67" class="f">vue-cli</text><text x="11.022" y="1.67" class="m">·</text><text x="13.026" y="1.67" class="f">Generated</text><text x="23.046" y="1.67" class="f">&quot;vue-test&quot;.</text></symbol><symbol id="48"><text y="1.67" class="f">#</text><text x="2.004" y="1.67" class="k">Installing</text><text x="13.026" y="1.67" class="k">project</text><text x="21.042" y="1.67" class="k">dependencies</text><text x="34.068" y="1.67" class="k">...</text></symbol><symbol id="49"><text y="1.67" class="f">#</text><text x="2.004" y="1.67" class="f">========================</text></symbol><symbol id="a"><path fill="transparent" d="M0 0h101v27H0z"/></symbol><symbol id="b"><path class="f" d="M0 0h1.102v2.171H0z"/></symbol></defs><path class="a" d="M0 0h101v58.617H0z"/><g style="animation-duration:13.420276999999997s;animation-iteration-count:1;animation-name:o;animation-fill-mode: forwards;animation-timing-function:steps(1,end)"><svg width="14241"><svg><use xlink:href="#a"/><use xlink:href="#b" x="-.004"/></svg><svg x="101"><use xlink:href="#a"/><use xlink:href="#b" x="-.004"/></svg><svg x="202"><use xlink:href="#a"/><use xlink:href="#b" x="19.996"/><use xlink:href="#1"/></svg><svg x="303"><use xlink:href="#a"/><use xlink:href="#b" x="19.996"/><use xlink:href="#1"/></svg><svg x="404"><use xlink:href="#a"/><use xlink:href="#b" x="19.996"/><use xlink:href="#1"/></svg><svg x="505"><use xlink:href="#a"/><use xlink:href="#b" x="20.996"/>0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text><text x="20.04" y="1.67" class="f">v</text><text x="21.042" y="1.67" class="m">ue</text><text x="24.048" y="1.67" class="m">init</text><text x="29.058" y="1.67" class="m">webpack</text><text x="37.074" y="1.67" class="m">vue-test</text></svg><svg x="606"><use xlink:href="#a"/><use xlink:href="#b" x="21.996"/>0<text y="1.67" class="f">kestrel</text><path class="g" d="M9.018 0h9v2.171h-9z"/><text x="9.018" y="1.67" class="h"> ~/reps</text><text x="18.036" y="1.67" class="i"></text><text x="20.04" y="1.67" class="f">vu</text><text x="22.044" y="1.67" class="m">e</text><text x="24.048" y="1.67" class="m">init</text><text x="29.058" y="1.67" class="m">webpack</text><text x="37.074" y="1.67" class="m">vue-test</text></svg><svg x="707"><use xlink:href="#a"/><use xlink:href="#b" x="44.996"/><use xlink:href="#2"/></svg><svg x="808"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="2.146"/><use xlink:href="#2"/></svg><svg x="909"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="2.146"/><use xlink:href="#2"/></svg><svg x="1010"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/></svg><svg x="1111"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1212"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1313"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1414"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#3" y="4.342"/></svg><svg x="1515"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1616"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1717"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#4" y="4.342"/></svg><svg x="1818"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="1919"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2020"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#5" y="4.342"/></svg><svg x="2121"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2222"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#6" y="4.342"/></svg><svg x="2323"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2424"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2525"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#7" y="4.342"/></svg><svg x="2626"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2727"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#8" y="4.342"/></svg><svg x="2828"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="2929"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3030"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#9" y="4.342"/></svg><svg x="3131"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3232"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#10" y="4.342"/></svg><svg x="3333"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3434"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#11" y="4.342"/></svg><svg x="3535"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3636"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#12" y="4.342"/></svg><svg x="3737"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="3838"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#3" y="4.342"/></svg><svg x="3939"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4040"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#4" y="4.342"/></svg><svg x="4141"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4242"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#5" y="4.342"/></svg><svg x="4343"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4444"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#6" y="4.342"/></svg><svg x="4545"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4646"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4747"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#7" y="4.342"/></svg><svg x="4848"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="4949"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5050"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#8" y="4.342"/></svg><svg x="5151"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5252"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#9" y="4.342"/></svg><svg x="5353"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5454"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#10" y="4.342"/></svg><svg x="5555"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5656"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#11" y="4.342"/></svg><svg x="5757"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="5858"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#12" y="4.342"/></svg><svg x="5959"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="6060"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#3" y="4.342"/></svg><svg x="6161"><use xlink:href="#a"/><use xlink:href="#2"/></svg><svg x="6262"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/></svg><svg x="6363"><use xlink:href="#a"/><use xlink:href="#b" x="25.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#13" y="4.342"/></svg><svg x="6464"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/><use xlink:href="#13" y="4.342"/></svg><svg x="6565"><use xlink:href="#a"/><use xlink:href="#b" x="25.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#13" y="4.342"/></svg><svg x="6666"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="4.317"/><use xlink:href="#2"/></svg><svg x="6767"><use xlink:href="#a"/><use xlink:href="#b" x="22.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="6868"><use xlink:href="#a"/><use xlink:href="#b" x="22.996" y="4.317"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="6969"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="7070"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#15" y="6.513"/></svg><svg x="7171"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#15" y="6.513"/></svg><svg x="7272"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#15" y="6.513"/></svg><svg x="7373"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/></svg><svg x="7474"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="7575"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="6.488"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="7676"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="7777"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#17" y="8.684"/></svg><svg x="7878"><use xlink:href="#a"/><use xlink:href="#b" x="43.996" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#17" y="8.684"/></svg><svg x="7979"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/></svg><svg x="8080"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8181"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8282"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="8.659"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8383"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="10.83"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8484"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8585"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#19" y="10.855"/><use xlink:href="#20" y="13.026"/><use xlink:href="#21" y="15.197"/><use xlink:href="#22" y="17.368"/></svg><svg x="8686"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#19" y="10.855"/><use xlink:href="#20" y="13.026"/><use xlink:href="#21" y="15.197"/><use xlink:href="#22" y="17.368"/></svg><svg x="8787"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/></svg><svg x="8888"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="8989"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="9090"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="9191"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#24" y="13.026"/></svg><svg x="9292"><use xlink:href="#a"/><use xlink:href="#b" x="27.996" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#24" y="13.026"/></svg><svg x="9393"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/></svg><svg x="9494"><use xlink:href="#a"/><use xlink:href="#b" x="24.996" y="13.001"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/></svg><svg x="9595"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/></svg><svg x="9696"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#26" y="15.197"/></svg><svg x="9797"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#26" y="15.197"/></svg><svg x="9898"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/></svg><svg x="9999"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="15.172"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10100"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="17.343"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10201"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10302"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#28" y="17.368"/><use xlink:href="#29" y="19.539"/><use xlink:href="#30" y="21.71"/><use xlink:href="#31" y="23.881"/></svg><svg x="10403"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#28" y="17.368"/><use xlink:href="#29" y="19.539"/><use xlink:href="#30" y="21.71"/><use xlink:href="#31" y="23.881"/></svg><svg x="10504"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/></svg><svg x="10605"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="10706"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="10807"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="10908"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="11009"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#33" y="19.539"/></svg><svg x="11110"><use xlink:href="#a"/><use xlink:href="#b" x="25.996" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#33" y="19.539"/></svg><svg x="11211"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/></svg><svg x="11312"><use xlink:href="#a"/><use xlink:href="#b" x="22.996" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11413"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="19.514"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11514"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="21.685"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11615"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="11716"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#35" y="21.71"/><use xlink:href="#36" y="23.881"/><use xlink:href="#37" y="26.052"/><use xlink:href="#31" y="28.223"/></svg><svg x="11817"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#35" y="21.71"/><use xlink:href="#36" y="23.881"/><use xlink:href="#37" y="26.052"/><use xlink:href="#31" y="28.223"/></svg><svg x="11918"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/></svg><svg x="12019"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12120"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12221"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12322"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12423"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#39" y="23.881"/></svg><svg x="12524"><use xlink:href="#a"/><use xlink:href="#b" x="40.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#39" y="23.881"/></svg><svg x="12625"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/></svg><svg x="12726"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="12827"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="12928"><use xlink:href="#a"/><use xlink:href="#b" x="37.996" y="23.856"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13029"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="26.027"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13130"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13231"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#41" y="26.052"/><use xlink:href="#42" y="28.223"/><use xlink:href="#43" y="30.394"/><use xlink:href="#44" y="32.565"/><use xlink:href="#45" y="34.736"/></svg><svg x="13332"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#41" y="26.052"/><use xlink:href="#42" y="28.223"/><use xlink:href="#43" y="30.394"/><use xlink:href="#44" y="32.565"/><use xlink:href="#45" y="34.736"/></svg><svg x="13433"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/></svg><svg x="13534"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13635"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13736"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="28.198"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13837"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="30.369"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/></svg><svg x="13938"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="32.54"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/><use xlink:href="#47" y="30.394"/></svg><svg x="14039"><use xlink:href="#a"/><use xlink:href="#b" x="-.004" y="43.395"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/><use xlink:href="#47" y="30.394"/><use xlink:href="#48" y="36.907"/><use xlink:href="#49" y="39.078"/></svg><svg x="14140"><use xlink:href="#a"/><use xlink:href="#2"/><use xlink:href="#14" y="4.342"/><use xlink:href="#16" y="6.513"/><use xlink:href="#18" y="8.684"/><use xlink:href="#23" y="10.855"/><use xlink:href="#25" y="13.026"/><use xlink:href="#27" y="15.197"/><use xlink:href="#32" y="17.368"/><use xlink:href="#34" y="19.539"/><use xlink:href="#38" y="21.71"/><use xlink:href="#40" y="23.881"/><use xlink:href="#46" y="26.052"/><use xlink:href="#47" y="30.394"/><use xlink:href="#48" y="36.907"/><use xlink:href="#49" y="39.078"/></svg></svg></g></g></svg></svg>
+                </div>
+            </section>
+            <section class="about-vue about-react horizontal-layout" data-transition="none">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
+                        <ul>
+                            <li class="fragment">спрашивает при установке, чего ты хочешь</li>
+                            <li class="fragment">предлагает большое количество шаблонов</li>
+                            <li class="fragment">позволяет делать шаблоны самому</li>
+                        </ul>
+                    </div>
+                    <div class="right react-bg center">
+                        <h3 class="fragment">¯\_(ツ)_/¯</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="about-react">
+                <h3>"Философия" create-react-app</h3>
+                <blockquote>
+                    <b>One Dependency:</b>There is just one build dependency.<br><br>
+
+                    <b>No Configuration Required</b>: You don't need to configure anything.<br><br>
+
+                    <b>No Lock-In</b>: You can “eject” to a custom setup at any time.<br>
+                </blockquote>
+                <span class="fragment" data-state="h_joke"></span>
+            </section>
+            <section>
+                <h2>Итого:</h2>
+                <div class="fragment" data-duration="3" data-animate="tada" data-delay="1.2">
+                    <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.2">
+                    <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.4">
+                    <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.6">
+                    <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="0.8">
+                    <img src="img/it_head.png" class="plain head-score" data-duration="1" data-animate="fadeIn" data-delay="1.0">
+                </div>
+            </section>
+        </section>
+        <section>
+            <h2><a href="https://vue-react.herokuapp.com/shwarm/" data-preview-link>$$$ Соц. сеть $$$</a></h2>
+        </section>
+        <section>
+            <section class="chapter" data-hide-meter>
+                <h1><p>2. DOM</p></h1>
+                <img src="img/chapters/2-dom.png" style="height: 350px">
+                <aside class="notes">
+                    [EG] - Мы решили пойти немного другим путём чем раньше, давайте возьмём несколько основных моментов, но копнём глубже. Так как и реакт и Vue - это View - то на дом больше всего времени
+                </aside>
+            </section>
+            <section>
+                <h5>Virtual DOM. Как он работает?</h5>
+            </section>
+            <section data-background="img/slides/vdom/1.png" data-background-size="contain"></section>
+            <section data-background="img/slides/vdom/2.png" data-background-size="contain"></section>
+            <section data-background="img/slides/vdom/3.png" data-background-size="contain"></section>
+            <section data-background="img/slides/vdom/4.png" data-background-size="contain"></section>
+            <section data-background="img/slides/vdom/5.png" data-background-size="contain"></section>
+            <section data-background="img/slides/vdom/6.png" data-background-size="contain"></section>
+
+            <section class="about-vue about-ng">
+                <div class="half-by-half">
+                    <div class="left vue-bg" style="position: relative">
+                        <div class="fragment replaceable-fragment-container white-bg-container">
+                            <img src="img/slides/vdom/1-vue-ng.png">
+                        </div>
+                        <div class="fragment replaceable-fragment-container white-bg-container">
+                            <img src="img/slides/vdom/2-vue.png">
+                        </div>
+                    </div>
+                    <div class="right angular-bg" style="position: relative">
+                        <div class="fragment replaceable-fragment-container white-bg-container">
+                            <img src="img/slides/vdom/1-vue-ng.png">
+                        </div>
+                        <div class="fragment replaceable-fragment-container white-bg-container">
+                            <img src="img/slides/vdom/2-ng.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-vue">
+                <p>SFC -> JS</p>
+                <pre><code data-trim data-noescape class="html" style="position: relative"><div class="fragment" data-fragment-index="1" style="position: absolute; top: 350px; left: 40px;"><img src="img/babel.svg" height="100"></div><div class="fragment" data-fragment-index="3" style="position: absolute; top: 650px; left: 40px;"><img src="img/postcss.svg" height="150"></div><span class="fragment code-highlight" data-fragment-index="4">&lt;template&gt;
   &lt;div id=&quot;hello&quot;&gt;
     &lt;h1&gt;{{ msg }}&lt;/h1&gt;
   &lt;/div&gt;
@@ -257,19 +257,19 @@ export default {
 }
 &lt;/style&gt;</span>
                         </code></pre>
-					</section>
-					<section class="about-vue">
-						<p>Vue template compiler</p>
-						<pre><code data-trim data-noescape class="html">
+            </section>
+            <section class="about-vue">
+                <p>Vue template compiler</p>
+                <pre><code data-trim data-noescape class="html">
 &lt;div id=&quot;hello&quot;&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
 &lt;/div&gt;
 						</code></pre>
 
-						<div style="position: relative" class="fragment" data-fragment-index="0">
-							<div class="fragment current-visible" data-fragment-index="0">
-								<p>render</p>
-								<pre><code data-trim data-noescape class="js">
+                <div style="position: relative" class="fragment" data-fragment-index="0">
+                    <div class="fragment current-visible" data-fragment-index="0">
+                        <p>render</p>
+                        <pre><code data-trim data-noescape class="js">
 function render() {
   with(this) {
     return _c('div',{attrs:{"id":"hello"}},[_c('h1',[_v(_s(msg))])])
@@ -277,10 +277,10 @@ function render() {
 }
 // staticRenderFns:[]
 								</code></pre>
-							</div>
-							<div class="fragment" data-fragment-index="1" style="position: absolute; top: 0; width: 100%; height: 100%">
-								<p>render</p>
-								<pre><code data-trim data-noescape class="js">
+                    </div>
+                    <div class="fragment" data-fragment-index="1" style="position: absolute; top: 0; width: 100%; height: 100%">
+                        <p>render</p>
+                        <pre><code data-trim data-noescape class="js">
 render: function (createElement) { // or h
   return createElement('div',
     {
@@ -296,36 +296,36 @@ render: function (createElement) { // or h
   )
 }
 							</code></pre>
-							</div>
-						</div>
-					</section>
-					<section class="about-vue">
-						<p>Vue template compiler</p>
-						<pre><code data-trim data-noescape class="html">
+                    </div>
+                </div>
+            </section>
+            <section class="about-vue">
+                <p>Vue template compiler</p>
+                <pre><code data-trim data-noescape class="html">
 &lt;div&gt;
   &lt;p&gt;Hello!&lt;/p&gt;
 &lt;/div&gt;
 						</code></pre>
 
-						<div class="fragment">
-								<p>staticRenderFns</p>
-								<pre><code data-trim data-noescape class="js">
+                <div class="fragment">
+                    <p>staticRenderFns</p>
+                    <pre><code data-trim data-noescape class="js">
 _m(0): function anonymous() {
   with(this){return _c('div',[_c('p',[_v("Hello!")])])}
 }
 								</code></pre>
-						</div>
-                        <aside class="notes">
-                            Well, static Render Functions are used to optimize the render process by essentially caching parts of the DOM tree that are static and therefore can’t change. When you call the render function that was generated along with them, it will call these functions to get those static parts.
-                        </aside>
-					</section>
+                </div>
+                <aside class="notes">
+                    Well, static Render Functions are used to optimize the render process by essentially caching parts of the DOM tree that are static and therefore can’t change. When you call the render function that was generated along with them, it will call these functions to get those static parts.
+                </aside>
+            </section>
 
 
 
-					<section><h5>Virtual DOM во Vue</h5></section>
-					<section class="about-vue">
-						<i>vue/src/core/vdom/vnode.js</i>
-						<pre><code data-trim data-noescape class="js">
+            <section><h5>Virtual DOM во Vue</h5></section>
+            <section class="about-vue">
+                <i>vue/src/core/vdom/vnode.js</i>
+                <pre><code data-trim data-noescape class="js">
 <span>export default class VNode {
   tag: string | void;
   data: VNodeData | void;
@@ -340,10 +340,10 @@ _m(0): function anonymous() {
   parent: VNode | void; // component placeholder node</span>
   //...
                         </code></pre>
-					</section>
-					<section class="about-vue">
-						<i>vue/src/core/vdom/patch.js</i>
-						<pre><code data-trim data-noescape class="js">
+            </section>
+            <section class="about-vue">
+                <i>vue/src/core/vdom/patch.js</i>
+                <pre><code data-trim data-noescape class="js">
 
 /**
  * Virtual DOM patching algorithm based on Snabbdom by
@@ -357,8 +357,8 @@ _m(0): function anonymous() {
  * of making flow understand it is not worth it.
  */
                         </code></pre>
-					</section>
-					<section class="about-vue">
+            </section>
+            <section class="about-vue">
 						<pre><code data-trim data-noescape class="js">
 // vue/src/core/vdom/patch.js
 function createElm (
@@ -377,71 +377,71 @@ function createElm (
 export function createElement (tagName: string, vnode: VNode): Element {
   const elm = document.createElement(tagName)</span>
 						</code></pre>
-						<aside class="notes">
-							Рассказать что это позволяет делать Серверный Рендеринг
-						</aside>
-					</section>
-					<section>
-						<h5>Переиспользование DOM</h5>
-					</section>
-					<section data-background="img/slides/keys/1.png" data-background-size="contain"></section>
-					<section data-background="img/slides/keys/2.png" data-background-size="contain"></section>
-					<section data-background="img/slides/keys/3.png" data-background-size="contain"></section>
-          <section class="about-vue about-ng">
-            <div class="half-by-half">
-              <div class="left vue-bg" style="position: relative">
-                <div class="fragment replaceable-fragment-container white-bg-container pt300">
-                  <img src="img/slides/keys/3-1-vue.png">
+                <aside class="notes">
+                    Рассказать что это позволяет делать Серверный Рендеринг
+                </aside>
+            </section>
+            <section>
+                <h5>Переиспользование DOM</h5>
+            </section>
+            <section data-background="img/slides/keys/1.png" data-background-size="contain"></section>
+            <section data-background="img/slides/keys/2.png" data-background-size="contain"></section>
+            <section data-background="img/slides/keys/3.png" data-background-size="contain"></section>
+            <section class="about-vue about-ng">
+                <div class="half-by-half">
+                    <div class="left vue-bg" style="position: relative">
+                        <div class="fragment replaceable-fragment-container white-bg-container pt300">
+                            <img src="img/slides/keys/3-1-vue.png">
+                        </div>
+                        <div class="fragment replaceable-fragment-container white-bg-container pt300">
+                            <img src="img/slides/keys/3-2-vue.png">
+                        </div>
+                    </div>
+                    <div class="right angular-bg" style="position: relative">
+                        <div class="fragment replaceable-fragment-container white-bg-container pt200">
+                            <img src="img/slides/keys/3-1-ng.png">
+                        </div>
+                        <div class="fragment replaceable-fragment-container white-bg-container pt200">
+                            <img src="img/slides/keys/3-2-ng.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="fragment replaceable-fragment-container white-bg-container pt300">
-                  <img src="img/slides/keys/3-2-vue.png">
-                </div>
-              </div>
-              <div class="right angular-bg" style="position: relative">
-                <div class="fragment replaceable-fragment-container white-bg-container pt200">
-                  <img src="img/slides/keys/3-1-ng.png">
-                </div>
-                <div class="fragment replaceable-fragment-container white-bg-container pt200">
-                  <img src="img/slides/keys/3-2-ng.png">
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
 
-                    <!--<section class="about-vue about-ng">-->
-                        <!--<div class="half-by-half">-->
-                            <!--<div class="left vue-bg"><img src="img/slides/keys/4-vue.png" class="fragment"></div>-->
-                            <!--<div class="right angular-bg"><img src="img/slides/keys/5-ng.png" class="fragment"></div>-->
-                        <!--</div>-->
-                    <!--</section>-->
-					<!--<section class="about-vue about-ng" data-background-color="white">-->
-						<!--<div class="half-by-half">-->
-							<!--<div class="left vue-bg" style="position: relative">-->
-								<!--<div class="fragment replaceable-fragment-container white-bg-container">-->
-									<!--<img src="img/slides/keys/6-vue-pre.png">-->
-								<!--</div>-->
-								<!--<div class="fragment replaceable-fragment-container white-bg-container">-->
-									<!--<img src="img/slides/keys/7-vue-pre.png">-->
-								<!--</div>-->
-							<!--</div>-->
-							<!--<div class="right angular-bg">-->
-								<!--<div class="fragment white-bg-container">-->
-									<!--<img src="img/slides/keys/8-ng-pre.png">-->
-								<!--</div>-->
-							<!--</div>-->
-						<!--</div>-->
-					<!--</section>-->
-					<section class="about-react">
-						Reuse Dom - Vue (key), React (key), Angular (trackBy)
-						<pre><code data-trim data-noescape class="html">
+            <!--<section class="about-vue about-ng">-->
+            <!--<div class="half-by-half">-->
+            <!--<div class="left vue-bg"><img src="img/slides/keys/4-vue.png" class="fragment"></div>-->
+            <!--<div class="right angular-bg"><img src="img/slides/keys/5-ng.png" class="fragment"></div>-->
+            <!--</div>-->
+            <!--</section>-->
+            <!--<section class="about-vue about-ng" data-background-color="white">-->
+            <!--<div class="half-by-half">-->
+            <!--<div class="left vue-bg" style="position: relative">-->
+            <!--<div class="fragment replaceable-fragment-container white-bg-container">-->
+            <!--<img src="img/slides/keys/6-vue-pre.png">-->
+            <!--</div>-->
+            <!--<div class="fragment replaceable-fragment-container white-bg-container">-->
+            <!--<img src="img/slides/keys/7-vue-pre.png">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="right angular-bg">-->
+            <!--<div class="fragment white-bg-container">-->
+            <!--<img src="img/slides/keys/8-ng-pre.png">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</section>-->
+            <section class="about-react">
+                Reuse Dom - Vue (key), React (key), Angular (trackBy)
+                <pre><code data-trim data-noescape class="html">
                             &lt;div v-for=&quot;item in items&quot; :key=&quot;item.id&quot;&gt;
                               &lt;!-- content --&gt;
                             &lt;/div&gt;
                         </code></pre>
-					</section>
-					<section>
-                        <h5>Инкапсуляция стилей</h5>
-                        <pre class="fragment"><code data-trim data-noescape class="style">
+            </section>
+            <section>
+                <h5>Инкапсуляция стилей</h5>
+                <pre class="fragment"><code data-trim data-noescape class="style">
 &lt;!-- Add &quot;scoped&quot; attribute to limit CSS to this component only --&gt;
 &lt;style scoped&gt;
   div {
@@ -449,47 +449,47 @@ export function createElement (tagName: string, vnode: VNode): Element {
   }
 &lt;/style&gt;
                         </code></pre>
-                        <pre class="fragment"><code data-trim data-noescape class="html">
+                <pre class="fragment"><code data-trim data-noescape class="html">
 &lt;div data-v-469af010=&quot;&quot;&gt;
     &lt;ul data-v-469af010=&quot;&quot;&gt;
         &lt;li data-v-469af010=&quot;&quot;&gt;
             &lt;div data-v-469af010=&quot;&quot; &gt;
                         </code></pre>
-					</section>
+            </section>
 
-          <section>
-            <div class="comparsion-table">
+            <section>
+                <div class="comparsion-table">
 
-              <img src="img/vue_logo.png">
-              <img src="img/react_logo.png">
-              <img src="img/ng_logo.png">
+                    <img src="img/vue_logo.png">
+                    <img src="img/react_logo.png">
+                    <img src="img/ng_logo.png">
 
-              <div class="fragment winner">Классические шаблоны/JSX</div>
-              <div class="fragment">JSX</div>
-              <div class="fragment">Классические шаблоны</div>
+                    <div class="fragment winner">Классические шаблоны/JSX</div>
+                    <div class="fragment">JSX</div>
+                    <div class="fragment">Классические шаблоны</div>
 
-              <div class="fragment">Классический VDOM</div>
-              <div class="fragment winner">React Fiber</div>
-              <div class="fragment loser">¯\_(ツ)_/¯</div>
+                    <div class="fragment">Классический VDOM</div>
+                    <div class="fragment winner">React Fiber</div>
+                    <div class="fragment loser">¯\_(ツ)_/¯</div>
 
-              <div class="fragment loser">SSR на функциях</div>
-              <div class="fragment loser">SSR на функциях</div>
-              <div class="fragment loser">SSR на функциях</div>
-            </div>
-          </section>
-				</section>
+                    <div class="fragment loser">SSR на функциях</div>
+                    <div class="fragment loser">SSR на функциях</div>
+                    <div class="fragment loser">SSR на функциях</div>
+                </div>
+            </section>
+        </section>
 
-				<section>
-					<section class="chapter" data-hide-meter>
-						<h1><p>3. Binding</p></h1>
-						<img src="img/chapters/3-binding.png" style="height: 350px">
-						<aside class="notes">
+        <section>
+            <section class="chapter" data-hide-meter>
+                <h1><p>3. Binding</p></h1>
+                <img src="img/chapters/3-binding.png" style="height: 350px">
+                <aside class="notes">
 
-						</aside>
-					</section>
-                    <section class="vue">
-                        <h5>Как это работает?</h5>
-                        <pre><code data-trim data-noescape class="html">
+                </aside>
+            </section>
+            <section class="vue">
+                <h5>Как это работает?</h5>
+                <pre><code data-trim data-noescape class="html">
 &lt;template&gt;
   &lt;div&gt;
     {{ message }}
@@ -506,21 +506,21 @@ export default {
   }
 &lt;/script&gt;
                         </code></pre>
-                    </section>
-					<section class="about-ng about-react horizontal-layout" data-transition="none">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left angular-bg center">
-								<h5 class="fragment">NgZone + Monkey Patching</h5>
-							</div>
-							<div class="right react-bg center">
-								<h3 class="fragment">¯\_(ツ)_/¯</h3>
-							</div>
-						</div>
-					</section>
-                    <section data-background="img/atomic.jpg" data-transition="fade-in" data-transition-speed="slow" data-hide-meter>
-                        <h1 data-animate="fadeIn" data-duration="5" data-delay="1" style="font-size: 6em">АТОМЫ</h1>
-                    </section>
-					<section class="vue">
+            </section>
+            <section class="about-ng about-react horizontal-layout" data-transition="none">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left angular-bg center">
+                        <h5 class="fragment">NgZone + Monkey Patching</h5>
+                    </div>
+                    <div class="right react-bg center">
+                        <h3 class="fragment">¯\_(ツ)_/¯</h3>
+                    </div>
+                </div>
+            </section>
+            <section data-background="img/atomic.jpg" data-transition="fade-in" data-transition-speed="slow" data-hide-meter>
+                <h1 data-animate="fadeIn" data-duration="5" data-delay="1" style="font-size: 6em">АТОМЫ</h1>
+            </section>
+            <section class="vue">
 						<pre><code data-trim data-noescape class="js">
 //...
 data () {
@@ -530,7 +530,7 @@ data () {
 },
 //...
                         </code></pre>
-						<pre class="fragment"><code data-trim data-noescape class="js">
+                <pre class="fragment"><code data-trim data-noescape class="js">
 {__ob__: Observer}
   message:(...)
   ▼ __ob__:Observer
@@ -542,10 +542,10 @@ data () {
   ▶ set message:ƒ reactiveSetter(newVal)
   ▶ __proto__: Object
                         </code></pre>
-					</section>
-					<section class="about-vue">
-						<i>vue/src/core/observer/index.js</i>
-						<pre><code data-trim data-noescape class="js">
+            </section>
+            <section class="about-vue">
+                <i>vue/src/core/observer/index.js</i>
+                <pre><code data-trim data-noescape class="js">
  /**
    * Walk through each property and convert them into
    * getter/setters. This method should only be called when
@@ -559,71 +559,71 @@ data () {
   }
 
                         </code></pre>
-					</section>
-					<section>
-						<h3>Проблемы?</h3>
-					</section>
-					<section data-background="img/bomb.jpeg" data-background-size="cover" data-hide-meter>
-						<aside class="notes">
-							Знаете что это? Это "Толстяк. Бомба, которую сбросили на Хиросиму. Но вообще могли бы сбросить Vue, ведь...
-						</aside>
-					</section>
-					<section data-background="img/bomb.jpeg" data-background-size="cover" data-background-color="rgba(0,0,0,0)" data-hide-meter>
-						<h5>Memory Overhead (20x)</h5>
-						<p>40b -> 760b</p>
-					</section>
+            </section>
+            <section>
+                <h3>Проблемы?</h3>
+            </section>
+            <section data-background="img/bomb.jpeg" data-background-size="cover" data-hide-meter>
+                <aside class="notes">
+                    Знаете что это? Это "Толстяк. Бомба, которую сбросили на Хиросиму. Но вообще могли бы сбросить Vue, ведь...
+                </aside>
+            </section>
+            <section data-background="img/bomb.jpeg" data-background-size="cover" data-background-color="rgba(0,0,0,0)" data-hide-meter>
+                <h5>Memory Overhead (20x)</h5>
+                <p>40b -> 760b</p>
+            </section>
 
-					  <section data-background="white">
-  						<img src="img/slides/control-problem/github-1.png" alt="">
-              <div class="fragment replaceable-fragment-container">
-                <img src="img/slides/control-problem/react-checkbox.gif" alt="">
-              </div>
-              <div class="fragment replaceable-fragment-container">
-                <img src="img/slides/control-problem/vue-checkbox.gif" alt="">
-              </div>
-              <div class="fragment replaceable-fragment-container">
-  	  					<img src="img/slides/control-problem/github-2.png" alt="" class="fragment">
-              </div>
-					  </section>
-          <section>
-            <div class="comparsion-table">
+            <section data-background="white">
+                <img src="img/slides/control-problem/github-1.png" alt="">
+                <div class="fragment replaceable-fragment-container">
+                    <img src="img/slides/control-problem/react-checkbox.gif" alt="">
+                </div>
+                <div class="fragment replaceable-fragment-container">
+                    <img src="img/slides/control-problem/vue-checkbox.gif" alt="">
+                </div>
+                <div class="fragment replaceable-fragment-container">
+                    <img src="img/slides/control-problem/github-2.png" alt="" class="fragment">
+                </div>
+            </section>
+            <section>
+                <div class="comparsion-table">
 
-              <img src="img/vue_logo.png">
-              <img src="img/react_logo.png">
-              <img src="img/ng_logo.png">
+                    <img src="img/vue_logo.png">
+                    <img src="img/react_logo.png">
+                    <img src="img/ng_logo.png">
 
-              <div class="winner opaque">Классические шаблоны/JSX</div>
-              <div class="opaque">JSX</div>
-              <div class="opaque">Классические шаблоны</div>
+                    <div class="winner opaque">Классические шаблоны/JSX</div>
+                    <div class="opaque">JSX</div>
+                    <div class="opaque">Классические шаблоны</div>
 
-              <div class="opaque">Классический VDOM</div>
-              <div class="winner opaque">React Fiber</div>
-              <div class="loser opaque">¯\_(ツ)_/¯</div>
+                    <div class="opaque">Классический VDOM</div>
+                    <div class="winner opaque">React Fiber</div>
+                    <div class="loser opaque">¯\_(ツ)_/¯</div>
 
-              <div class="fragment winner">Атомы</div>
-              <div class="fragment loser">Ничего :-(</div>
-              <div class="fragment winner">Зоны</div>
+                    <div class="fragment winner">Атомы</div>
+                    <div class="fragment loser">Ничего :-(</div>
+                    <div class="fragment winner">Зоны</div>
 
-            </div>
-          </section>
-				</section>
+                </div>
+            </section>
+        </section>
 
 
-				<section>
-                    <section class="chapter" data-hide-meter>
-                        <h1><p>4. Data flow</p></h1>
-                        <img src="img/chapters/4-data-flow.png" style="height: 300px">
-                        <aside class="notes">
+        <section>
+            <section class="chapter" data-hide-meter>
+                <h1><p>4. Data flow</p></h1>
+                <img src="img/chapters/4-data-flow.png" style="height: 300px">
+                <aside class="notes">
 
-                        </aside>
-                    </section>
-					<section>
-						<h2>Vuex</h2>
-						<i>State management pattern + library</i>
-					</section>
-					<section class="about-vue about-react horizontal-layout">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left vue-bg center">
+                </aside>
+            </section>
+            <section>
+                <h2>Vuex</h2>
+                <i>State management pattern + library</i>
+            </section>
+            <section class="about-vue about-react horizontal-layout">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
 								<pre><code data-trim data-noescape class="js">
 									<span>Vue.use(Vuex)</span>
 									<span class="fragment">//...
@@ -634,8 +634,8 @@ data () {
 									  template: '&lt;App/&gt;'</span>
 									})</span>
 								</code></pre>
-							</div>
-							<div class="right react-bg center">
+                    </div>
+                    <div class="right react-bg center">
 								<pre class="fragment"><code data-trim data-noescape class="js">
 const store = createStore(rootReducer)
 <span class="fragment">//...
@@ -646,12 +646,12 @@ render(
   document.getElementById('root')</span>
 )</span>
 								</code></pre>
-							</div>
-						</div>
-					</section>
-					<section class="about-vue about-react horizontal-layout" data-transition="none">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left vue-bg center">
+                    </div>
+                </div>
+            </section>
+            <section class="about-vue about-react horizontal-layout" data-transition="none">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
 								<pre><code data-trim data-noescape class="js">
 const Shawermeter = {
   template: `&lt;div&gt;{{ score }}&lt;/div&gt;`,
@@ -662,22 +662,26 @@ const Shawermeter = {
   }
 }
 								</code></pre>
-							</div>
-							<div class="right react-bg center">
-								<pre class="fragment"><code data-trim data-noescape class="js">
-function Shawermeter({state}) {
-  return &lt;div&gt;{ state.score }&lt;/div&gt;
+                    </div>
+                    <div class="right react-bg center">
+                                <pre class="fragment"><code data-trim data-noescape class="js">
+function Shawermeter({score}) {
+  return &lt;div&gt;{ score }&lt;/div&gt;
 }
-								</code></pre>
-							</div>
-						</div>
-					</section>
-					<section>
-						<h5>Геттеры</h5>
-					</section>
-					<section class="about-vue about-react horizontal-layout">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left vue-bg center">
+
+<span class="fragment">export default connect(
+    state => {score: state.score}
+)(Shawermeter)</span>
+                                </code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h5>Геттеры</h5>
+            </section>
+            <section class="about-vue about-react horizontal-layout">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
 								<pre><code data-trim data-noescape class="js">
 <span>const store = new Vuex.Store({
   state: {
@@ -690,22 +694,22 @@ function Shawermeter({state}) {
   }
 })</span>
 								</code></pre>
-							</div>
-							<div class="right react-bg center">
-								<ol>
-									<li class="fragment">Перестраиваем state</li>
-									<li class="fragment">Вычисляем в функции render</li>
-								</ol>
-							</div>
-						</div>
-					</section>
-					<section>
-						<h5>Мутации</h5>
-						<span class="fragment" data-state="mutant"></span>
-					</section>
-					<section class="about-vue about-react horizontal-layout">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left vue-bg center">
+                    </div>
+                    <div class="right react-bg center">
+                        <ol>
+                            <li class="fragment">Перестраиваем state</li>
+                            <li class="fragment">Вычисляем в функции render</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h5>Мутации</h5>
+                <span class="fragment" data-state="mutant"></span>
+            </section>
+            <section class="about-vue about-react horizontal-layout">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
 								<pre><code data-trim data-noescape class="js">
 const store = new Vuex.Store({
   state: { count: 1 },
@@ -718,33 +722,33 @@ const store = new Vuex.Store({
 //...</span>
 <span class="fragment">store.commit('increment')</span>
 								</code></pre>
-							</div>
-							<div class="right react-bg center">
-								<h5 class="fragment">Action<span class="fragment"> -> reducer</span><span class="fragment"> -> store update</span></h5>
-							</div>
-						</div>
-					</section>
-					<section class="about-vue about-react horizontal-layout">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left vue-bg center">
-								<h5>Мутации должны:</h5>
-								<ul>
-									<li class="fragment">Следовать правилам реактивности Vue</li>
-									<li class="fragment">(Хорошо бы) Использовать константы для типов</li>
-									<li class="fragment"><u>Быть синхронными</u></li>
-								</ul>
-							</div>
-							<div class="right react-bg center">
-								<h5 class="fragment">Action -> reducer -> store update</h5>
-							</div>
-						</div>
-					</section>
-					<section>
-						<h5>Действия (Actions)</h5>
-					</section>
-					<section class="about-vue about-react horizontal-layout">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left vue-bg center">
+                    </div>
+                    <div class="right react-bg center">
+                        <h5 class="fragment">Action<span class="fragment"> -> reducer</span><span class="fragment"> -> store update</span></h5>
+                    </div>
+                </div>
+            </section>
+            <section class="about-vue about-react horizontal-layout">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
+                        <h5>Мутации должны:</h5>
+                        <ul>
+                            <li class="fragment">Следовать правилам реактивности Vue</li>
+                            <li class="fragment">(Хорошо бы) Использовать константы для типов</li>
+                            <li class="fragment"><u>Быть синхронными</u></li>
+                        </ul>
+                    </div>
+                    <div class="right react-bg center">
+                        <h5 class="fragment">Action -> reducer -> store update</h5>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h5>Действия (Actions)</h5>
+            </section>
+            <section class="about-vue about-react horizontal-layout">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
 								<pre><code data-trim data-noescape class="js">
 actions: {
   incrementAsync ({ commit }, amount) {
@@ -756,8 +760,8 @@ actions: {
 //...
 <span class="fragment">store.dispatch('incrementAsync', {  amount: 10  })</span>
 								</code></pre>
-							</div>
-							<div class="right react-bg center">
+                    </div>
+                    <div class="right react-bg center">
 								<pre class="fragment"><code data-trim data-noescape class="js">
 function incrementAsync(amount) {
   return function(dispatch) {
@@ -767,12 +771,12 @@ function incrementAsync(amount) {
   }
 }
 								</code></pre>
-							</div>
-						</div>
-					</section>
-					<section class="about-vue about-react horizontal-layout">
-						<div class="half-by-half horizontal" style="text-align: center">
-							<div class="left vue-bg center">
+                    </div>
+                </div>
+            </section>
+            <section class="about-vue about-react horizontal-layout">
+                <div class="half-by-half horizontal" style="text-align: center">
+                    <div class="left vue-bg center">
 								<pre><code data-trim data-noescape class="js">
 actions: {
   actionA ({ commit }) {
@@ -784,204 +788,222 @@ actions: {
 //...
 <span class="fragment">store.dispatch('actionA').then(() => { //...</span>
 								</code></pre>
-							</div>
-							<div class="right react-bg center">
-								<h3 class="fragment">¯\_(ツ)_/¯</h3>
-							</div>
-						</div>
-					</section>
-					<section data-background="img/food.jpg" data-background-size="cover" data-hide-meter>
-						<aside class="notes">
-							Vuex похож на сухпай для солдата:
-						</aside>
-					</section>
-					<section data-background="img/food.jpg" data-background-size="cover" data-background-color="rgba(0,0,0,0)" data-hide-meter>
-						<h3>Vuex vs Redux</h3>
-						<ul>
-							<li class="fragment">Чуть больше сахара</li>
-							<li class="fragment">Проще</li>
-						</ul>
-					</section>
-				</section>
+                    </div>
+                    <div class="right react-bg center">
+                        <pre class="fragment"><code data-trim data-noescape class="js">
+function actionA(data) {
+  return function(dispatch) {
+    <span class="fragment">dispatch({type: 'startActionA'})</span>
+    <span class="fragment">asyncFunction.then(dispatch({type: 'endActionA', data})</span>
+  }
+}
+<span class="fragment">//...
+dispatch(actionA).then(() => { //...</span>
+</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section data-background="img/food.jpg" data-background-size="cover" data-hide-meter>
+                <aside class="notes">
+                    Vuex похож на сухпай для солдата:
+                </aside>
+            </section>
+            <section data-background="img/food.jpg" data-background-size="cover" data-background-color="rgba(0,0,0,0)" data-hide-meter>
+                <h3>Vuex vs Redux</h3>
+                <ul>
+                    <li class="fragment">Чуть больше сахара</li>
+                    <li class="fragment">Проще</li>
+                </ul>
+            </section>
+        </section>
 
-				<section data-hide-meter>
-					<section class="chapter">
-						<h1><p>5. Выводы</p></h1>
-						<img src="img/chapters/5-comparsion.png" style="height: 350px">
-						<aside class="notes">
-						</aside>
-					</section>
-					<section>
-						<div class="comparsion-table">
+        <section data-hide-meter>
+            <section class="chapter">
+                <h1><p>5. Выводы</p></h1>
+                <img src="img/chapters/5-comparsion.png" style="height: 350px">
+                <aside class="notes">
+                </aside>
+            </section>
+            <section>
+                <div class="comparsion-table">
 
-							<img src="img/vue_logo.png">
-							<img src="img/react_logo.png">
-							<img src="img/ng_logo.png">
+                    <img src="img/vue_logo.png">
+                    <img src="img/react_logo.png">
+                    <img src="img/ng_logo.png">
 
-              <div class="fragment winner" data-fragment-index="0">Классические шаблоны/JSX</div>
-              <div class="fragment" data-fragment-index="0">JSX</div>
-              <div class="fragment" data-fragment-index="0">Классические шаблоны</div>
+                    <div class="fragment winner" data-fragment-index="0">Классические шаблоны/JSX</div>
+                    <div class="fragment" data-fragment-index="0">JSX</div>
+                    <div class="fragment" data-fragment-index="0">Классические шаблоны</div>
 
-              <div class="fragment" data-fragment-index="1">Классический VDOM</div>
-              <div class="fragment winner" data-fragment-index="1">React Fiber</div>
-              <div class="fragment loser" data-fragment-index="1">¯\_(ツ)_/¯</div>
+                    <div class="fragment" data-fragment-index="1">Классический VDOM</div>
+                    <div class="fragment winner" data-fragment-index="1">React Fiber</div>
+                    <div class="fragment loser" data-fragment-index="1">¯\_(ツ)_/¯</div>
 
-              <div class="fragment winner" data-fragment-index="2">Атомы</div>
-              <div class="fragment loser" data-fragment-index="2">Ничего :-(</div>
-              <div class="fragment winner" data-fragment-index="2">Зоны</div>
+                    <div class="fragment winner" data-fragment-index="2">Атомы</div>
+                    <div class="fragment loser" data-fragment-index="2">Ничего :-(</div>
+                    <div class="fragment winner" data-fragment-index="2">Зоны</div>
 
-              <div class="fragment"><u>Универсальность</u></div>
-              <div class="fragment"><u>Кастомизация</u></div>
-			        <div class="fragment"><u>Фичи</u></div>
-						</div>
-						<aside class="notes">
-							Выводы - чем хорош чем плох
-							- TS
-							- Boilerplate - больше
-							- ООП - сторы на строчках
-							+ Комьюнити (есть и минус - китайцы)
-							+ Скорость - ??? посмотреть
-						</aside>
-					</section>
-				</section>
-				<section data-meter-fullscreen></section>
-				<section data-hide-meter>
-					<section data-background="img/chapters/6-end.png" data-background-size="cover">
-					</section>
-					<section data-background="img/chapters/6-end.png" data-background-size="cover" data-background-color="rgba(0,0,0,0)">
-						<h1>Конец</h1>
-					</section>
-				</section>
-				<section data-hide-meter>
-					<div class="half-by-half faces">
-						<div class="left">
-							<div class="middle-content"><img src="img/eg.jpg" class="avatar">
-							<p style="font-size: 50px;">
-								<img src="img/twitter.png" style="width: 50px"><a href="https://twitter.com/bunopus">@bunopus</a><br><br>
-							</p>
-							<div class="info">
-								<div>
-									<img src="img/vk-social.png" class="small-logo"/>
-									<img src="img/facebook-social.png" class="small-logo"/>
-									<img src="img/habr-social.png" class="small-logo"/>  <a href="https://www.wrike.com/">@wriketeam</a>
-								</div>
-								<span><a href="http://bit.ly/dart_ru">http://bit.ly/dart_ru</a></span>
-							</div></div>
-						</div>
-						<div class="right">
-							<div class="middle-content"><img src="img/il.jpg" class="avatar">
-							<p style="font-size: 50px;">
-								<img src="img/twitter.png" style="width: 50px"><a href="https://twitter.com/darkilfa">@darkilfa</a><br><br>
-							</p>
-							<div class="info">
-								Что-то про вконтач <br/>
-                				clearfix
-							</div></div>
-						</div>
-					</div>
-				</section>
+                    <div class="fragment"><u>Универсальность</u></div>
+                    <div class="fragment"><u>Кастомизация</u></div>
+                    <div class="fragment"><u>Фичи</u></div>
+                </div>
+                <aside class="notes">
+                    Выводы - чем хорош чем плох
+                    - TS
+                    - Boilerplate - больше
+                    - ООП - сторы на строчках
+                    + Комьюнити (есть и минус - китайцы)
+                    + Скорость - ??? посмотреть
+                </aside>
+            </section>
+        </section>
+        <section data-meter-fullscreen></section>
+        <section data-hide-meter>
+            <section data-background="img/chapters/6-end.png" data-background-size="cover">
+            </section>
+            <section data-background="img/chapters/6-end.png" data-background-size="cover" data-background-color="rgba(0,0,0,0)">
+                <h1>Конец</h1>
+            </section>
+        </section>
+        <section>
+            <h3><a href="https://www.youtube.com/watch?v=urETHcEQZGw">Angular vs React</a></h3>
+            <div style="font-size: 1.6em;" class="fragment"><a href="https://ru.vuejs.org/">http://ru.vuejs.org/</a>
+            </div>
+        </section>
+        <section data-hide-meter>
+            <div class="half-by-half faces">
+                <div class="left">
+                    <div class="middle-content"><img src="img/eg.jpg" class="avatar">
+                        <p style="font-size: 50px;">
+                            <img src="img/twitter.png" style="width: 50px"><a href="https://twitter.com/bunopus">@bunopus</a><br><br>
+                        </p>
+                        <div class="info">
+                            <div>
+                                <img src="img/vk-social.png" class="small-logo"/>
+                                <img src="img/facebook-social.png" class="small-logo"/>
+                                <img src="img/habr-social.png" class="small-logo"/>  <a href="https://www.wrike.com/">@wriketeam</a>
+                            </div>
+                            <span><a href="http://bit.ly/dart_ru">http://bit.ly/dart_ru</a></span>
+                        </div></div>
+                </div>
+                <div class="right">
+                    <div class="middle-content"><img src="img/il.jpg" class="avatar">
+                        <p style="font-size: 50px;">
+                            <img src="img/twitter.png" style="width: 50px"><a href="https://twitter.com/darkilfa">@darkilfa</a><br><br>
+                        </p>
+                        <div class="info">
+                            <div>
+                                <img src="img/vk-social.png" class="small-logo"/>
+                                <a href="https://vk.com/vkteam">@vkteam</a>
+                                <br/>
+                                <br/>
+                            </div>
+                        </div></div>
+                </div>
+            </div>
+        </section>
 
-			</div>
-		</div>
-		<img id="h_joke" src="img/h.png" style="display: none; position: absolute; top: 50%; left: 50px; z-index: 100">
-		<img id="mutant" src="img/mutant.png" style="display: none; position: absolute; top: 45%; left: 50px; z-index: 101; height: 800px; animation-duration: 800ms;     transform: rotate(20deg);
+    </div>
+</div>
+<img id="h_joke" src="img/h.png" style="display: none; position: absolute; top: 50%; left: 50px; z-index: 100">
+<img id="mutant" src="img/mutant.png" style="display: none; position: absolute; top: 45%; left: 50px; z-index: 101; height: 800px; animation-duration: 800ms;     transform: rotate(20deg);
 ">
 
 
-        <div id="poll-container">
-            <div>
-                <div class="chart-container"><canvas id="poll"></canvas></div>
-                <div class="numbers">
-                    <span class="vue"></span>
-                    <span class="react"></span>
-                    <span class="angular"></span>
-                </div>
-            </div>
+<div id="poll-container">
+    <div>
+        <div class="chart-container"><canvas id="poll"></canvas></div>
+        <div class="numbers">
+            <span class="vue"></span>
+            <span class="react"></span>
+            <span class="angular"></span>
         </div>
+    </div>
+</div>
 
-        <script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-                controls: false,
-                history: true,
-                width: "100%",
-                height: "100%",
-                margin: 0,
-                minScale: 1,
-                maxScale: 1,
-                dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: waitForHLJS },
-					{ src: 'bower_components/jquery/dist/jquery.js' },
-					{ src: 'js/animations.js' },
-					{ src: 'plugin/corner-logos/corner-logos.js' },
-					{ src: 'plugin/blur-background/blur-background.js' },
-					{ src: 'plugin/script-runner/script-runner.js' },
-					{ src: 'plugin/code-fragment-highlight/code-fragment-highlight.js' },
-                    { src: 'bower_components/chart.js/dist/Chart.bundle.js' },
-                    { src: 'js/poll.js' },
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        controls: false,
+        history: true,
+        width: "100%",
+        height: "100%",
+        margin: 0,
+        minScale: 1,
+        maxScale: 1,
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: waitForHLJS },
+            { src: 'bower_components/jquery/dist/jquery.js' },
+            { src: 'js/animations.js' },
+            { src: 'plugin/corner-logos/corner-logos.js' },
+            { src: 'plugin/blur-background/blur-background.js' },
+            { src: 'plugin/script-runner/script-runner.js' },
+            { src: 'plugin/code-fragment-highlight/code-fragment-highlight.js' },
+            { src: 'bower_components/chart.js/dist/Chart.bundle.js' },
+            { src: 'js/poll.js' },
 
-                ],
-				cornerLogos: {
-                    'about-vue': 'img/vue_logo.png',
-                    'about-react': 'img/react_logo.png',
-                    'about-ng': 'img/ng_logo.png'
-                },
-                script_runner: {
-					'data-svg-console': {
-						'slidechanged': function (event) {
-							let slide = event.currentSlide;
-                            let container = slide.getElementsByClassName('wrapper')[0];
-							if (container) {
-                                let svg = $(container).children('svg').detach();
-								$(container).append(svg);
-							}
-						}
-					}
-            },
-			});
-
-            function waitForHLJS() {
-                if(window.hljs) {
-                    hljs.initHighlightingOnLoad();
-                    return;
+        ],
+        cornerLogos: {
+            'about-vue': 'img/vue_logo.png',
+            'about-react': 'img/react_logo.png',
+            'about-ng': 'img/ng_logo.png'
+        },
+        script_runner: {
+            'data-svg-console': {
+                'slidechanged': function (event) {
+                    let slide = event.currentSlide;
+                    let container = slide.getElementsByClassName('wrapper')[0];
+                    if (container) {
+                        let svg = $(container).children('svg').detach();
+                        $(container).append(svg);
+                    }
                 }
-                console.log('Waiting for hljs');
-                setTimeout(waitForHLJS, 1000);
             }
+        },
+    });
 
-            Reveal.addEventListener( 'fragmentshown', function( event ) {
-                if (event.fragment.getAttribute('data-state') === 'h_joke') {
-                    $("#h_joke").show().addClass('animated bounceInUp');
-                }
-                if (event.fragment.getAttribute('data-state') === 'mutant') {
-                    $("#mutant").show().addClass('animated slideInLeft');
-                    setTimeout(function () {
-                        $("#mutant").show().addClass('animated slideOutLeft');
-                    }, 2000)
-                }
-            });
+    function waitForHLJS() {
+        if(window.hljs) {
+            hljs.initHighlightingOnLoad();
+            return;
+        }
+        console.log('Waiting for hljs');
+        setTimeout(waitForHLJS, 1000);
+    }
 
-            Reveal.addEventListener( 'fragmenthidden', function( event ) {
-                if(event.fragment.getAttribute('data-state') === 'h_joke'){
-                    $("#h_joke").hide();
-                }
-                if(event.fragment.getAttribute('data-state') === 'mutant'){
-                    $("#mutant").hide();
-                }
-            } );
+    Reveal.addEventListener( 'fragmentshown', function( event ) {
+        if (event.fragment.getAttribute('data-state') === 'h_joke') {
+            $("#h_joke").show().addClass('animated bounceInUp');
+        }
+        if (event.fragment.getAttribute('data-state') === 'mutant') {
+            $("#mutant").show().addClass('animated slideInLeft');
+            setTimeout(function () {
+                $("#mutant").show().addClass('animated slideOutLeft');
+            }, 2000)
+        }
+    });
 
-            Reveal.addEventListener( 'slidechanged', function( event ) {
-                    $("#h_joke").hide();
-                    $("#mutant").hide();
-            } );
-		</script>
-	</body>
+    Reveal.addEventListener( 'fragmenthidden', function( event ) {
+        if(event.fragment.getAttribute('data-state') === 'h_joke'){
+            $("#h_joke").hide();
+        }
+        if(event.fragment.getAttribute('data-state') === 'mutant'){
+            $("#mutant").hide();
+        }
+    } );
+
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+        $("#h_joke").hide();
+        $("#mutant").hide();
+    } );
+</script>
+</body>
 </html>
