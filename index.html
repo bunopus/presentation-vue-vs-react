@@ -949,8 +949,12 @@ dispatch(actionA).then(() => { //...</span>
             { src: 'plugin/code-fragment-highlight/code-fragment-highlight.js' },
             { src: 'bower_components/chart.js/dist/Chart.bundle.js' },
             { src: 'js/poll.js' },
-
+            {src: 'plugin/alt-arrows/alt-arrows.js', async: true}
         ],
+        keyboard: {
+            39: 'next',
+            37: 'prev'
+        },
         cornerLogos: {
             'about-vue': 'img/vue_logo.png',
             'about-react': 'img/react_logo.png',
